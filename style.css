@@ -80,4 +80,21 @@ select {
 /* my own styles */
 .logo {
     background-color: #2b266d;
+    padding: 25px 33px 25px 165px;
+}
+.header-top-section {
+    display: flex;
+}
+.wellcome {
+    background: #00A8E3;
+    color: white;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 3;
+}
+.wellcome-text {
+    text-align: left;
+    padding-left: 33px;
 }
