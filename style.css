@@ -78,6 +78,10 @@ select {
 }
 
 /* my own styles */
+.top-gradient-section>header {
+    z-index: 3;
+    position: relative;
+}
 .logo {
     background-color: #2b266d;
     padding: 25px 33px 25px 165px;
@@ -97,4 +101,31 @@ select {
 .wellcome-text {
     text-align: left;
     padding-left: 33px;
+}
+.top-gradient-section {
+    background: linear-gradient(116.57deg, #2B266D 0%, #00A8E3 83.33%);
+    height: 966px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.99999;
+}
+
+.top-gradient-circle-block {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.top-gradient-circle-block__gradient {
+    background: radial-gradient(50% 50% at 51.23% 50%, #CE0058 0.06%, rgba(206, 0, 88, 0.0001) 100%);
+filter: blur(135.914px);
+background-color: red;
+    width: 50vw;
+    height: 50vh;
+    display: block;
+    /*transform: translateY(-65%);*/
 }
