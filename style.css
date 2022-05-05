@@ -78,6 +78,9 @@ select {
 }
 
 /* my own styles */
+body {
+    background: red;
+}
 .top-gradient-section>header {
     z-index: 3;
     position: relative;
@@ -108,6 +111,7 @@ select {
     position: relative;
     z-index: 1;
     opacity: 0.99999;
+    overflow: hidden;
 }
 
 .top-gradient-circle-block {
@@ -123,9 +127,21 @@ select {
 .top-gradient-circle-block__gradient {
     background: radial-gradient(50% 50% at 51.23% 50%, #CE0058 0.06%, rgba(206, 0, 88, 0.0001) 100%);
 filter: blur(135.914px);
-background-color: red;
+/*background-color: red;*/
     width: 50vw;
     height: 50vh;
     display: block;
     /*transform: translateY(-65%);*/
+}
+
+.background-circle-transform-block {
+    transform: matrix(1, 0, 0.5, 2, 60, 10) rotate(10deg);
+    width: 150%;
+    height: 483px;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    border-radius: 50%;
+    bottom: -242px;
+    left: -50%;
 }
