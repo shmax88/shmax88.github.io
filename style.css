@@ -112,7 +112,7 @@ body {
 }
 .top-gradient-section {
     background: linear-gradient(116.57deg, #2B266D 0%, #00A8E3 83.33%);
-    height: 966px;
+    height: auto;
     position: relative;
     z-index: 1;
     opacity: 0.99999;
@@ -148,7 +148,7 @@ filter: blur(135.914px);
     z-index: 2;
     background: white;
     border-radius: 50%;
-    bottom: -142px;
+    bottom: -280px;
     left: -50%;
     /*display: none;*/
 }
@@ -221,12 +221,13 @@ filter: blur(135.914px);
   max-width: 50%;
 }
 
-.home-hero-block_text-block__learn-more {
+.home-hero-block_text-block__learn-more,
+.event-button-with-details-1 {
   background: #CE0058;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 10px 14px;
   display: inline-block;
   box-shadow: -10px 15px 15px rgba(0, 168, 227, 0.33);
@@ -269,4 +270,94 @@ filter: blur(135.914px);
 }
 .slick-dots li button:before {
   font-size: 12px;
+}
+
+.home-events-block {
+  position: relative;
+  z-index: 3;
+}
+
+.slick-list.draggable {
+  max-height: 460px;
+}
+
+.home-events-block {
+  display: flex;
+  justify-content: center;
+}
+
+.event-icon-box {
+  background: #2B266D;
+  text-align: center;
+  color: white;
+  padding: 28px 20px;
+}
+
+.event-icon-box__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.event-icon-box__icon {
+  color:#CE0058;
+  font-size: 40px;
+}
+
+.event__img {
+  height: 143px;
+}
+
+.event-text-block {
+  padding: 28px 20px;
+}
+
+.event-text-block__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2B266D;
+  margin-bottom: 15px;
+}
+
+.event-text-block__desciption-specific {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.event-button-with-details-1 {
+  box-shadow: none;
+  margin-bottom: 14px;
+  padding: 10px 25px;
+}
+
+.event-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-button-with-details-2 {
+  background: #FFFFFF;
+  border: 1px solid #CE0058;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #CE0058;
+  padding: 10px 25px;
+}
+
+.event-button-with-details-1>i, 
+.event-button-with-details-2>i {
+  padding-right: 25px;
 }
