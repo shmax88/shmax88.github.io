@@ -145,3 +145,28 @@ filter: blur(135.914px);
     bottom: -242px;
     left: -50%;
 }
+
+.main-menu-nav {
+  margin-top: 40px;
+}
+
+.main-menu-nav_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-menu-nav_listitem {
+  padding: 0 10px 15px;
+}
+
+.main-menu-nav_listitem.active, .main-menu-nav_listitem:hover {
+  background-color: black;
+  border-bottom: 4px solid #00A8E3;
+}
+
+.main-menu-nav_listitem>a {
+  text-decoration: none;
+  color: white;
+}
