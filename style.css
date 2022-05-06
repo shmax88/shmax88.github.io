@@ -78,9 +78,14 @@ select {
 }
 
 /* my own styles */
+
+/*Для каждого шрифта необходимо прописывать отдельное правило */
+/* Семейство шрифта, его начертание, насыщенность и способ отображения в браузере */
+
 body {
-    background: red;
+  font-family: 'Roboto', sans-serif;
 }
+
 .top-gradient-section>header {
     z-index: 3;
     position: relative;
@@ -169,4 +174,36 @@ filter: blur(135.914px);
 .main-menu-nav_listitem>a {
   text-decoration: none;
   color: white;
+}
+
+.home-hero-block-wrapper {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+
+.home-hero-block_img__img {
+  border-radius: 50%;
+  max-width: 344px;
+}
+
+.home-hero-block_text-block {
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  margin-left: 50px;
+}
+
+.home-hero-block_text-block__heading {
+  font-size: 44px;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+.home-hero-block_text-block__description {
+  font-size: 20px;
+  line-height: 26px;
 }
