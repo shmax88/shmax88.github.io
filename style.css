@@ -186,6 +186,14 @@ filter: blur(135.914px);
   padding: 0 5%;
 }
 
+.home-hero-block_img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  /*box-shadow: -15px 15px 5px black;*/
+}
+
 .home-hero-block_img__img {
   /*border-radius: 50%;*/
   max-width: 344px;
@@ -209,6 +217,7 @@ filter: blur(135.914px);
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 20px;
+  max-width: 50%;
 }
 
 .home-hero-block_text-block__learn-more {
@@ -220,4 +229,43 @@ filter: blur(135.914px);
   padding: 10px 14px;
   display: inline-block;
   box-shadow: -10px 15px 25px #A5A3C2;
+}
+
+.slider-home-page {
+  z-index: 4;
+}
+
+.slick-initialized .slick-slide.home-hero-block-wrapper {
+  display: flex;
+  width: 100vw !important;
+  transform: translateX(5%);
+}
+
+.home-hero-block-wrapper.slick-slide {
+  padding: 0 !important;
+}
+
+.slick-dots {
+  top: 400px;
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin: 2.5px;
+  padding: 0;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li:hover button:before
+ {
+  color: #2B266D;
+}
+.slick-dots li button:before {
+  font-size: 12px;
 }
