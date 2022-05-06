@@ -147,7 +147,7 @@ filter: blur(135.914px);
     z-index: 2;
     background: white;
     border-radius: 50%;
-    bottom: -242px;
+    bottom: -142px;
     left: -50%;
 }
 
@@ -201,9 +201,23 @@ filter: blur(135.914px);
   font-size: 44px;
   line-height: 52px;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .home-hero-block_text-block__description {
   font-size: 20px;
   line-height: 26px;
+  margin-bottom: 20px;
 }
+
+.home-hero-block_text-block__learn-more {
+  background: #CE0058;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 10px 14px;
+  display: inline-block;
+  box-shadow: -10px 15px 25px #A5A3C2;
+}
+
