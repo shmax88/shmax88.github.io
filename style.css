@@ -130,7 +130,8 @@ body {
 }
 
 .top-gradient-circle-block__gradient {
-    background: radial-gradient(50% 50% at 51.23% 50%, #CE0058 0.06%, rgba(206, 0, 88, 0.0001) 100%);
+    /*background: radial-gradient(50% 50% at 51.23% 50%, #CE0058 0.06%, rgba(206, 0, 88, 0.0001) 100%);*/
+    background: radial-gradient(50% 50% at 51.23% 50%, #CE0058 100%, rgba(206, 0, 88, 0.0001) 100%);
 filter: blur(135.914px);
 /*background-color: red;*/
     width: 50vw;
@@ -228,7 +229,7 @@ filter: blur(135.914px);
   border-radius: 6px;
   padding: 10px 14px;
   display: inline-block;
-  box-shadow: -10px 15px 25px #A5A3C2;
+  box-shadow: -10px 15px 15px rgba(0, 168, 227, 0.33);
 }
 
 .slider-home-page {
