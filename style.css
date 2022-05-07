@@ -148,7 +148,7 @@ filter: blur(135.914px);
     z-index: 2;
     background: white;
     border-radius: 50%;
-    bottom: -280px;
+    bottom: 490px;
     left: -50%;
     /*display: none;*/
 }
@@ -369,4 +369,9 @@ filter: blur(135.914px);
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
+}
+
+.about-wellcome-info {
+  position: relative;
+  z-index: 3;
 }
