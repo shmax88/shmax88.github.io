@@ -115,9 +115,10 @@ body {
 }
 .top-gradient-section {
     /*background: linear-gradient(116.57deg, #2B266D 0%, #00A8E3 83.33%);
-    opacity: 0.99999; overflow: hidden;*/
+    opacity: 0.99999;*/
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .top-gradient-circle-block {
