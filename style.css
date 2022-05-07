@@ -85,7 +85,8 @@ select {
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url(img/background-main.jpg);
-  background-position: 0px -300px;
+  background-size: cover;
+  background-position: 0 80px;
 }
 
 .top-gradient-section>header {
@@ -140,6 +141,7 @@ filter: blur(135.914px);
     height: 50vh;
     display: block;
     /*transform: translateY(-65%);*/
+    display: none;
 }
 
 .background-circle-transform-block {
