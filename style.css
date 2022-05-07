@@ -82,6 +82,11 @@ select {
 /*Для каждого шрифта необходимо прописывать отдельное правило */
 /* Семейство шрифта, его начертание, насыщенность и способ отображения в браузере */
 
+:root {
+  --main-padding: 0 5%;
+  --color-for-not-white-bg: white;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url(img/background-main.jpg);
@@ -102,7 +107,7 @@ body {
 }
 .wellcome {
     background: #00A8E3;
-    color: white;
+    color: var(--color-for-not-white-bg);
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -155,7 +160,7 @@ filter: blur(135.914px);
 
 .main-menu-nav {
   margin-top: 40px;
-  padding: 0 5%;
+  padding: var(--main-padding);
 }
 
 .main-menu-nav_list {
@@ -176,7 +181,7 @@ filter: blur(135.914px);
 
 .main-menu-nav_listitem>a {
   text-decoration: none;
-  color: white;
+  color: var(--color-for-not-white-bg);
 }
 
 .home-hero-block-wrapper {
@@ -185,7 +190,7 @@ filter: blur(135.914px);
   display: flex;
   margin-top: 40px;
   justify-content: space-around;
-  padding: 0 5%;
+  padding: var(--main-padding);
 }
 
 .home-hero-block_img {
@@ -204,7 +209,7 @@ filter: blur(135.914px);
 .home-hero-block_text-block {
   font-style: normal;
   font-weight: 400;
-  color: white;
+  color: var(--color-for-not-white-bg);
   margin-left: 50px;
 }
 
@@ -226,7 +231,7 @@ filter: blur(135.914px);
 .event-button-with-details-1,
 .about-wellcome-info__button {
   background: #CE0058;
-  color: white;
+  color: var(--color-for-not-white-bg);
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 8px;
@@ -284,13 +289,13 @@ filter: blur(135.914px);
 }
 
 .home-events-block {
-  padding: 0 5%;
+  padding: var(--main-padding);
 }
 
 .event-icon-box {
   background: #2B266D;
   text-align: center;
-  color: white;
+  color: var(--color-for-not-white-bg);
   padding: 28px 20px;
   border-radius: 12px 0 0 12px;
 }
@@ -378,11 +383,12 @@ filter: blur(135.914px);
   z-index: 3;
   margin-top: 30px;
   display: flex;
-  padding: 0 5%;
+  padding: var(--main-padding);
   margin-bottom: 200px;
 }
 
-.about-wellcome-info::after {
+.about-wellcome-info::after,
+.main-info-section::after {
   content: "";
   background: #00A8E3;
   position: absolute;
@@ -396,6 +402,7 @@ filter: blur(135.914px);
 
 .about-wellcome-info__box {
   flex-basis: auto;
+  border-radius: 12px;
 }
 
 .about-wellcome-info__box:nth-of-type(2) {
@@ -436,6 +443,7 @@ filter: blur(135.914px);
   line-height: 28px;
   color: #FFFFFF;
   padding: 20px;
+  border-radius: 12px 12px 0 0;
 }
 
 .about-wellcome-info__description {
@@ -447,6 +455,7 @@ filter: blur(135.914px);
   font-size: 16px;
   line-height: 22px;
   min-height: 215px;
+  border-radius: 0 0 12px 12px;
 }
 
 .about-wellcome-info__description-span {
@@ -459,4 +468,76 @@ filter: blur(135.914px);
   box-shadow: none;
   width: max-content;
   margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.about-wellcome-info__button.addipional-margin {
+  margin-top: 67px;
+}
+
+.main-info-section {
+  display: flex;
+  padding: var(--main-padding);
+  background-image: url('img/our-research-bg-2.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 70px
+}
+
+.main-info-section::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: calc(50% + 1px);
+  z-index: 4;
+}
+
+.research-and-resources__box_media-content_img {
+  max-width: 215px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+.research-and-resources__box_media-content:nth-last-of-type(2) {
+  margin-right: 25px;
+}
+
+.research-and-resources__box_media-holder {
+  display: flex;
+}
+
+.research-and-resources__box {
+  color: var(--color-for-not-white-bg);
+  padding: 0 12px;
+}
+
+.research-and-resources__box_heading {
+  margin-top: 40px;
+}
+
+.research-and-resources__box_description {
+  margin: 25px 0 40px 0;
+}
+
+.research-and-resources__box__text-container {
+  min-height: 215px;
+}
+
+.research-and-resources__box_media-content_pdf-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2B266D;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.research-and-resources__box-text {
+  color: #212529;
 }
