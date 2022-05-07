@@ -84,6 +84,8 @@ select {
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-image: url(img/background-main.jpg);
+  background-position: 0px -300px;
 }
 
 .top-gradient-section>header {
@@ -111,7 +113,7 @@ body {
     padding-left: 33px;
 }
 .top-gradient-section {
-    background: linear-gradient(116.57deg, #2B266D 0%, #00A8E3 83.33%);
+    /*background: linear-gradient(116.57deg, #2B266D 0%, #00A8E3 83.33%);*/
     height: auto;
     position: relative;
     z-index: 1;
@@ -148,9 +150,9 @@ filter: blur(135.914px);
     z-index: 2;
     background: white;
     border-radius: 50%;
-    bottom: 490px;
+    bottom: 520px;
     left: -50%;
-    /*display: none;*/
+    display: none;
 }
 
 .main-menu-nav {
@@ -222,7 +224,8 @@ filter: blur(135.914px);
 }
 
 .home-hero-block_text-block__learn-more,
-.event-button-with-details-1 {
+.event-button-with-details-1,
+.about-wellcome-info__button {
   background: #CE0058;
   color: white;
   text-decoration: none;
@@ -374,4 +377,87 @@ filter: blur(135.914px);
 .about-wellcome-info {
   position: relative;
   z-index: 3;
+  margin-top: 30px;
+  display: flex;
+  padding: 0 5%;
+  margin-bottom: 200px;
+}
+
+.about-wellcome-info::after {
+  content: "";
+  background: #00A8E3;
+  position: absolute;
+  bottom: -60px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.about-wellcome-info__box {
+  flex-basis: auto;
+}
+
+.about-wellcome-info__box:nth-of-type(2) {
+  margin-left: 30px;
+}
+
+.about-wellcome-info__multimedia-block_img,
+.about-wellcome-info__multimedia-block_video {
+  max-width: 470px;
+}
+
+.about-wellcome-info__multimedia-block.video-wrapper {
+  position: relative;
+  line-height: 0;
+}
+
+#playpause {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid #D0D4DC;
+  border-bottom: 50px solid transparent;
+  border-radius: 8px;
+}
+
+#playpause.hidden {
+  opacity: 0;
+}
+
+.about-wellcome-info__heading {
+  background: #2B266D;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.about-wellcome-info__description {
+  background: #E9E9F0;
+  padding: 20px;
+  color: #212529;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 215px;
+}
+
+.about-wellcome-info__description-span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.about-wellcome-info__button {
+  display: block;
+  box-shadow: none;
+  width: max-content;
+  margin-top: 25px;
 }
