@@ -85,6 +85,7 @@ select {
 :root {
   --main-padding: 0 5%;
   --color-for-not-white-bg: white;
+  --flex-basis-size: 40%;
 }
 
 body {
@@ -289,7 +290,7 @@ filter: blur(135.914px);
 }
 
 .home-events-block {
-  padding: var(--main-padding);
+  /*padding: var(--main-padding);*/
 }
 
 .event-icon-box {
@@ -317,14 +318,15 @@ filter: blur(135.914px);
 }
 
 .event-text-block {
-  padding: 28px 20px;
+  padding: 28px 17px;
+  /*flex-basis: 240px;*/
 }
 
 .event-text-block__heading {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 22px;
   color: #2B266D;
   margin-bottom: 15px;
 }
@@ -341,7 +343,11 @@ filter: blur(135.914px);
 .event-button-with-details-1 {
   box-shadow: none;
   margin-bottom: 14px;
-  padding: 10px 25px;
+  padding: 10px 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .event-buttons-wrapper {
@@ -357,12 +363,13 @@ filter: blur(135.914px);
   border-radius: 8px;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #CE0058;
-  padding: 10px 25px;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 .event-button-with-details-1>i, 
@@ -371,7 +378,8 @@ filter: blur(135.914px);
 }
 
 .home-events-block__content-wrapper {
-  flex-basis: 100%;
+  width: calc(80% + 25px);
+  margin: 0 auto;
   background: #E9E9F0;
   display: flex;
   justify-content: space-between;
@@ -383,7 +391,8 @@ filter: blur(135.914px);
   z-index: 3;
   margin-top: 30px;
   display: flex;
-  padding: var(--main-padding);
+  /*padding: var(--main-padding);*/
+  justify-content: center;
   margin-bottom: 200px;
 }
 
@@ -401,8 +410,8 @@ filter: blur(135.914px);
 }
 
 .about-wellcome-info__box {
-  flex-basis: auto;
   border-radius: 12px;
+  flex-basis: var(--flex-basis-size);
 }
 
 .about-wellcome-info__box:nth-of-type(2) {
@@ -411,7 +420,8 @@ filter: blur(135.914px);
 
 .about-wellcome-info__multimedia-block_img,
 .about-wellcome-info__multimedia-block_video {
-  max-width: 470px;
+  /*max-width: 470px;*/
+  width: 100%;
 }
 
 .about-wellcome-info__multimedia-block.video-wrapper {
@@ -454,7 +464,7 @@ filter: blur(135.914px);
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  min-height: 215px;
+  height: 225px;
   border-radius: 0 0 12px 12px;
 }
 
@@ -472,12 +482,13 @@ filter: blur(135.914px);
 }
 
 .about-wellcome-info__button.addipional-margin {
-  margin-top: 67px;
+  margin-top: 45px;
 }
 
 .main-info-section {
   display: flex;
-  padding: var(--main-padding);
+  /*padding: var(--main-padding);*/
+  justify-content: center;
   background-image: url('img/our-research-bg-2.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -493,7 +504,7 @@ filter: blur(135.914px);
   background-color: white;
   position: absolute;
   top: 0;
-  left: calc(50% + 1px);
+  left: calc(50% - 1px);
   z-index: 4;
 }
 
@@ -513,7 +524,8 @@ filter: blur(135.914px);
 
 .research-and-resources__box {
   color: var(--color-for-not-white-bg);
-  padding: 0 12px;
+  margin: 0 12px;
+  flex-basis: var(--flex-basis-size);
 }
 
 .research-and-resources__box_heading {
