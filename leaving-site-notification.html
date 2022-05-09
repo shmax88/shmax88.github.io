@@ -16,24 +16,22 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <title>modal-window</title>
+    <title>leaving-site-notification</title>
 </head>
 <body class="modal-home-body">
     <div class="modal-bg-wrapper">
         <form action="#" class="modal-form-home" method="post">
-            <h2 class="modal-form-home__heading">The information contained on this site is intended 
-                for health care professionals only
-            </h2>
-                <label for="modal-form-home__select">Please select your country or region</label>
-                <select name="modal-form-home__select" id="modal-form-home__select" required>
-                    <option value="placeholder" disabled selected>*Country/Region list</option>
-                    <option value="value1">Option 1</option>
-                    <option value="value2" >Option 2</option>
-                    <option value="value3">Option 3</option>
-                </select>
+                <p class="modal-home__leaving-warning-text">
+                    You are now leaving <span>Rhythm Medical Gateway</span> to enter 
+                    a website neither owned nor operated by Rhythm Pharmaceuticals. 
+                    Links to all outside websites are provided as a convenience 
+                    to our visitors and do not imply a recommendation by Rhythm 
+                    Pharmaceuticals. Rhythm Pharmaceuticals accepts no responsibility 
+                    or liability for the content or services of other websites.
+                </p>
             <div class="modal-form-home__buttons-wrapper">
-                <button class="modal-form-home__button-type1" type="button">I Am Not a Health Care Professional</button>
-                <button class="modal-form-home__button-type2" type="submit">I am A Health Care Professional</button>
+                <button class="modal-form-home__button-type1" type="button">Go back</button>
+                <button class="modal-form-home__button-type2" type="submit">I agree</button>
             </div>
         </form>
     </div>

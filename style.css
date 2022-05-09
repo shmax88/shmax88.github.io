@@ -780,22 +780,35 @@ color: black;
 .modal-form-home__button-type2 {
   border: none;
   cursor: pointer;
-  font-size: 1.2vw;
+  font-size: 1.14vw;
   line-height: 18px;
+  flex-basis: 50%;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .modal-form-home__button-type1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.2vw;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--main-buttons-color);
   padding: 10px 7px;
   margin-right: 7px;
+  color: var(--main-buttons-color);
+  background-color: transparent;
 }
 
 .modal-form-home__button-type2 {
   box-shadow: none;
+}
+
+.modal-home__leaving-warning-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  margin-bottom: 75px;
+}
+
+.modal-home__leaving-warning-text>span {
+  font-weight: bold;
 }
