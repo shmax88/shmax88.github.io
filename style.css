@@ -1,17 +1,17 @@
-/* Указываем box sizing */
+/* Remove box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
+/* Remove внутренние отступы */
 ul[class],
 ol[class] {
   padding: 0;
 }
 
-/* Убираем внешние отступы */
+/* Remove margins */
 body,
 h1,
 h2,
@@ -29,7 +29,7 @@ dd {
   margin: 0;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
+/* Reset main options of body to default*/
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -37,29 +37,29 @@ body {
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+/* remove list style from all list types */
 ul[class],
 ol[class] {
   list-style: none;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+/* reset all elements, who haven't class to default */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Упрощаем работу с изображениями */
+/* Img styles to default */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article*/
+/* Specify a clear periodicity in the data flow of the article*/
 article > * + * {
   margin-top: 1em;
 }
 
-/* Наследуем шрифты для инпутов и кнопок */
+/* Inheriting fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -67,7 +67,7 @@ select {
   font: inherit;
 }
 
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+/* Removing all animations and transitions for people who prefer not to use them */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -79,13 +79,11 @@ select {
 
 /* my own styles */
 
-/*Для каждого шрифта необходимо прописывать отдельное правило */
-/* Семейство шрифта, его начертание, насыщенность и способ отображения в браузере */
-
 :root {
   --main-padding: 0 5%;
   --color-for-not-white-bg: white;
   --flex-basis-size: 40%;
+  --main-buttons-color: #CE0058;
 }
 
 body {
@@ -261,8 +259,9 @@ filter: blur(135.914px);
 
 .home-hero-block_text-block__learn-more,
 .event-button-with-details-1,
-.about-wellcome-info__button {
-  background: #CE0058;
+.about-wellcome-info__button,
+.modal-form-home__button-type2 {
+  background: var(--main-buttons-color);
   color: var(--color-for-not-white-bg);
   text-decoration: none;
   text-transform: uppercase;
@@ -320,9 +319,9 @@ filter: blur(135.914px);
   max-height: 460px;
 }
 
-.home-events-block {
-  /*padding: var(--main-padding);*/
-}
+/*.home-events-block {
+  padding: var(--main-padding);
+}*/
 
 .event-icon-box {
   background: #2B266D;
@@ -340,7 +339,7 @@ filter: blur(135.914px);
 }
 
 .event-icon-box__icon {
-  color:#CE0058;
+  color:var(--main-buttons-color);
   font-size: 40px;
 }
 
@@ -390,7 +389,7 @@ filter: blur(135.914px);
 
 .event-button-with-details-2 {
   background: #FFFFFF;
-  border: 1px solid #CE0058;
+  border: 1px solid var(--main-buttons-color);
   border-radius: 8px;
   font-style: normal;
   font-weight: 700;
@@ -398,7 +397,7 @@ filter: blur(135.914px);
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #CE0058;
+  color: var(--main-buttons-color);
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -705,4 +704,98 @@ filter: blur(135.914px);
 
 .main-footer__menu>li:last-of-type::after {
   display: none;
+}
+
+.modal-home-body {
+  background: none;
+}
+
+.modal-bg-wrapper {
+  background-color:#2b266d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form-home {
+  background: #E9E9F0;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 40px 65px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.modal-form-home__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #2B266D;
+  margin-bottom: 40px;
+}
+
+.modal-form-home>label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #212529;
+}
+
+.modal-form-home>select:active,
+.modal-form-home>select:hover,
+.modal-form-home>select:focus {
+  outline: none;
+}
+
+.modal-form-home>select {
+  color: #777777;
+  border: none;
+  padding: 10px 40px 8px 15px;
+  border-radius: 12px;
+  appearance: none;
+  background-image: url(img/Icon.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.modal-form-home>select>option {
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: black;
+}
+
+.modal-form-home__buttons-wrapper {
+  display: flex;
+}
+
+.modal-form-home__button-type1,
+.modal-form-home__button-type2 {
+  border: none;
+  cursor: pointer;
+  font-size: 1.2vw;
+  line-height: 18px;
+}
+
+.modal-form-home__button-type1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2vw;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-buttons-color);
+  padding: 10px 7px;
+  margin-right: 7px;
+}
+
+.modal-form-home__button-type2 {
+  box-shadow: none;
 }
