@@ -812,3 +812,47 @@ color: black;
 .modal-home__leaving-warning-text>span {
   font-weight: bold;
 }
+
+.home-hero-block-wrapper.about-page-modified1 {
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+.home-hero-block_text-block.about-page-modified2 {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.home-hero-block_text-block__description.about-page-modified3 {
+  width: 100%;
+  margin: 0 auto 20px;
+  text-align: center;
+  max-width: unset;
+}
+
+.about-page-bg {
+  background-image: url(img/background-about.jpg);
+  background-size: 100% 65%;
+  background-repeat: no-repeat;
+}
+
+.about-page-image {
+  border-radius: 17px;
+  flex-basis: 60%;
+  max-width: 60%;
+}
+
+.about-page-image__box {
+  display: flex;
+  align-items: center;
+  margin: 55px auto;
+}
+
+.about-page-image-additional-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B266D;
+  padding: 0 30px;
+}
