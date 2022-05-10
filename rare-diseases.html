@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/pro.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <title>About page</title>
+</head>
+<body class="about-page-bg">
+    <section class="top-gradient-section">
+    <header>
+        <div class="header-top-section">
+            <div class="logo">
+                <svg class="logo-svg" width="189" height="49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.822 1.02h2.29v14.713c1.587-2.802 4.25-4.998 8.594-4.998 6.025 0 9.53 4.111 9.53 9.81v14.572h-2.29V20.965c0-4.904-2.756-8.127-7.567-8.127-4.67 0-8.267 3.55-8.267 8.5v13.779h-2.29V1.02M84.26 11.296h2.52L76.459 35.957c-2.1 4.998-4.53 6.773-7.94 6.773-1.822 0-3.13-.328-4.717-1.029l.793-2.007c1.26.606 2.289.888 4.064.888 2.476 0 4.11-1.448 5.885-5.606L63.1 11.296h2.663l9.901 21.298 8.596-21.299M96.214 28.998v-15.6h-3.456v-2.102h3.456V3.682h2.29v7.614h8.36v2.103h-8.36v15.366c0 3.41 2.007 4.623 4.763 4.623 1.167 0 2.148-.232 3.503-.84v2.15c-1.214.56-2.383.84-3.876.84-3.69 0-6.68-2.009-6.68-6.54M116.438 1.02h2.288v14.713c1.589-2.802 4.25-4.998 8.595-4.998 6.026 0 9.528 4.111 9.528 9.81v14.572h-2.289V20.965c0-4.904-2.756-8.127-7.566-8.127-4.67 0-8.268 3.55-8.268 8.5v13.779h-2.288V1.02M180.66 35.117h2.289V20.683c0-5.978-3.504-9.948-9.155-9.948-4.484 0-7.053 2.476-8.595 5.138-.981 2.055-1.4 0-1.4 4.951v14.293h2.288V21.245c0-5.325 3.504-8.407 7.52-8.407 4.391 0 7.053 2.989 7.053 8.127v14.152" fill="#fff"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M166.07 20.824v14.293h-2.289V21.245c0-5.325-3.503-8.407-7.519-8.407-4.391 0-7.053 2.989-7.053 8.127v14.152h-2.289V20.683c0-5.978 3.503-9.948 9.154-9.948 4.484 0 7.054 2.476 8.595 5.138.843 1.805 1.401 0 1.401 4.951M16.534 21.152c5.512-.748 9.576-3.876 9.576-9.343v-.093c0-2.336-.934-4.53-2.476-6.073-1.962-1.96-5.184-3.222-9.203-3.222H.7v24.094h2.43V4.663h11.164c5.93 0 9.388 2.755 9.388 7.146v.094c0 4.718-4.065 7.473-9.53 7.473h-.294v2.238L24.24 35.117h3.083l-10.79-13.965" fill="#fff"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.81 34.102A1.905 1.905 0 1 1 0 34.1a1.905 1.905 0 0 1 3.81.002" fill="#009DCD"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M85.606 45.974c1.047 0 1.734-.56 1.734-1.39v-.018c0-.903-.678-1.373-1.698-1.373h-1.596v2.781h1.56Zm-2.274-3.439h2.365c1.425 0 2.365.759 2.365 2.004v.018c0 1.363-1.138 2.067-2.482 2.067h-1.534v2.23h-.714v-6.319ZM89.88 42.535h.714v2.807h3.647v-2.807h.712v6.319h-.712V46.01h-3.647v2.844h-.713v-6.319M101.36 46.544l-1.436-3.224-1.443 3.224h2.879ZM99.6 42.49h.668l2.88 6.364h-.768l-.74-1.67H98.2l-.747 1.67h-.732l2.878-6.364ZM107.573 45.758c.947 0 1.624-.488 1.624-1.3v-.018c0-.777-.596-1.246-1.616-1.246h-1.949v2.564h1.941Zm-2.655-3.223h2.717c.777 0 1.4.235 1.797.632.307.306.487.748.487 1.246v.017c0 1.048-.722 1.662-1.714 1.842l1.941 2.582h-.876l-1.833-2.455h-1.805v2.455h-.714v-6.319ZM112.035 42.535h.722l2.302 3.448 2.301-3.448h.723v6.319h-.714v-5.118l-2.302 3.385h-.036l-2.302-3.377v5.11h-.694v-6.319" fill="#fff"/>
+                <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="119" y="42" width="28" height="7">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M119.854 42.426h26.758V48.9h-26.758v-6.475Z" fill="#fff"/>
+                </mask>
+                <g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                  <path d="m124.493 46.544-1.435-3.224-1.446 3.224h2.881Zm-1.761-4.054h.668l2.881 6.364h-.768l-.74-1.67h-3.44l-.749 1.67h-.73l2.878-6.364ZM127.414 45.713v-.02c0-1.786 1.337-3.267 3.196-3.267 1.147 0 1.833.407 2.465 1.002l-.488.523c-.532-.504-1.128-.865-1.986-.865-1.399 0-2.446 1.136-2.446 2.591v.017c0 1.462 1.057 2.609 2.446 2.609.867 0 1.435-.334 2.041-.91l.469.459c-.659.667-1.381 1.11-2.527 1.11-1.825 0-3.17-1.436-3.17-3.25M134.947 42.535h4.567v.65h-3.854v2.157h3.448v.65h-3.448v2.212h3.9v.65h-4.613v-6.319M141.348 46.208v-3.673h.713v3.628c0 1.363.723 2.13 1.932 2.13 1.164 0 1.906-.703 1.906-2.085v-3.673h.712v3.62c0 1.84-1.056 2.798-2.636 2.798-1.563 0-2.627-.958-2.627-2.745"/>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M150.486 43.194h-2.131v-.659h4.974v.659h-2.131v5.66h-.712v-5.66" fill="#fff"/>
+                <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="155" y="42" width="9" height="7">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M155 42.426h8.691V48.9H155v-6.475Z" fill="#fff"/>
+                </mask>
+                <g mask="url(#b)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                  <path d="M155.154 48.854h.713v-6.319h-.713v6.319ZM157.996 45.713v-.02c0-1.786 1.335-3.267 3.195-3.267 1.147 0 1.833.407 2.465 1.002l-.487.523c-.534-.504-1.129-.865-1.987-.865-1.399 0-2.447 1.136-2.447 2.591v.017c0 1.462 1.057 2.609 2.447 2.609.867 0 1.435-.334 2.04-.91l.469.459c-.658.667-1.381 1.11-2.527 1.11-1.823 0-3.168-1.436-3.168-3.25"/>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m169.661 46.544-1.435-3.224-1.444 3.224h2.879ZM167.9 42.49h.67l2.879 6.364h-.768l-.741-1.67h-3.438l-.75 1.67h-.731l2.879-6.364Z" fill="#fff"/>
+                <mask id="c" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="173" y="42" width="11" height="7">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M173.219 42.444h10.532v6.457h-10.532v-6.457Z" fill="#fff"/>
+                </mask>
+                <g mask="url(#c)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                  <path d="M173.219 42.535h.712v5.66h3.558v.659h-4.27v-6.319M179.012 47.933l.443-.525c.658.597 1.29.895 2.166.895.848 0 1.409-.451 1.409-1.074v-.018c0-.587-.317-.921-1.644-1.201-1.453-.316-2.121-.785-2.121-1.823v-.019c0-.992.876-1.724 2.076-1.724.921 0 1.58.263 2.221.777l-.416.551c-.586-.478-1.173-.686-1.823-.686-.821 0-1.346.45-1.346 1.02v.017c0 .597.327.93 1.716 1.227 1.408.308 2.058.822 2.058 1.789v.017c0 1.084-.902 1.788-2.158 1.788-1.001 0-1.823-.334-2.581-1.01"/>
+                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M185.235 12.786h.521c.112 0 .221-.004.329-.012a.82.82 0 0 0 .283-.065.452.452 0 0 0 .199-.168.56.56 0 0 0 .077-.315.478.478 0 0 0-.07-.27.46.46 0 0 0-.175-.158.713.713 0 0 0-.237-.069 2.265 2.265 0 0 0-.261-.015h-.666v1.072Zm-.505-1.485h1.255c.776 0 1.164.317 1.164.949 0 .302-.084.522-.252.662-.169.141-.378.224-.629.249l.958 1.47h-.543l-.904-1.432h-.544v1.433h-.505V11.3Zm-1.256 1.669a2.485 2.485 0 0 0 .681 1.734 2.299 2.299 0 0 0 1.662.7c.327 0 .632-.062.916-.187.282-.125.529-.296.742-.513.211-.217.378-.474.501-.77.122-.296.184-.616.184-.964 0-.342-.062-.663-.184-.962a2.407 2.407 0 0 0-.501-.772 2.385 2.385 0 0 0-.742-.513 2.254 2.254 0 0 0-.916-.188 2.3 2.3 0 0 0-1.662.701 2.503 2.503 0 0 0-.681 1.733Zm-.505 0a2.823 2.823 0 0 1 .842-2.033c.26-.252.562-.452.907-.597a2.79 2.79 0 0 1 1.099-.218c.388 0 .753.072 1.098.218.345.145.647.345.908.597a2.824 2.824 0 0 1 .842 2.032 2.81 2.81 0 0 1-1.75 2.63c-.345.146-.71.219-1.098.219a2.79 2.79 0 0 1-1.099-.219 2.91 2.91 0 0 1-.907-.597 2.81 2.81 0 0 1-.842-2.033Z" fill="#fff"/>
+              </svg>                
+                <!--<img src="logo.png" alt="logo1">-->
+              </div>
+            <div class="wellcome">
+                <span class="wellcome-text">Welcome to the Rhythm Pharmaceuticals</span>
+                <span class="wellcome-text">Medical Resource and Knowledge Gateway</span> 
+            </div>
+        </div>
+        <nav class="main-menu-nav"><ul class="main-menu-nav_list">
+            <li class="main-menu-nav_listitem"><a href="#">Home</a></li>
+            <li class="main-menu-nav_listitem active"><a href="#">About Rhythm Pharmaceuticals</a></li>
+            <li class="main-menu-nav_listitem"><a href="#">Rare Genetic Diseases of Obesity</a>
+                <ul>
+
+                </ul>
+            </li>
+            <li class="main-menu-nav_listitem"><a href="#">Our Research</a></li>
+            <li class="main-menu-nav_listitem"><a href="#">Events</a></li>
+            <li class="main-menu-nav_listitem"><a href="#">Resources</a></li>
+            <li class="main-menu-nav_listitem"><a href="#">Contact</a></li>
+        </ul></nav>
+        
+    </header>
+    <div class="slider-home-page">
+        <div class="home-hero-block-wrapper about-page-modified1">
+            <div class="home-hero-block_text-block about-page-modified2">
+                <h3 class="home-hero-block_text-block__heading">About Rhythm Pharmaceuticals</h3>
+                <p class="home-hero-block_text-block__description about-page-modified3">We’re dedicated to understanding 
+                    and treating the underlying causes of rare genetic diseases of obesity
+                    to address the impact that these diseases can have on patients and on 
+                    those who love them.
+                </p>  
+            </div>
+          <div class="about-page-image__box">
+            <img class="about-page-image" src="img/about-hero.jpg" alt="hero-face">
+            <p class="about-page-image-additional-text">Individuals with rare genetic 
+                diseases of obesity are often affected with hyperphagia (pathological, 
+                insatiable hunger) and early-onset, severe obesity.1,2
+            </p>  
+          </div>
+        </div>
+    </div>
+    <div class="about-info-section">
+        <div class="about-page-image__box">
+            <img class="about-page-image info-section_modified1" src="img/about-table.png" alt="hero-face">
+            <p class="about-page-image-additional-text info-section_modified2">
+                <span>Our Pipeline</span>
+                Rhythm has developed setmelanotide, a melanocortin-4 receptor (MC4R) agonist that 
+                may restore impaired MC4R pathway function caused by genetic variants that occur 
+                upstream of the receptor.3
+            </p>  
+          </div>
+    </div>
+    <div class="connect-section-box">
+        <p class="connect-section-box__text"><span>References</span> 
+          1. Huvenne H, et al. Obes Facts. 2016;9(3):158-173. 
+          2. da Fonseca ACP, et al. J Diabetes Complications. 2017;31(10):1549-1561. 
+          3. Heymsfield SB, et al. Obesity (Silver Spring). 2014;22(suppl 1):S1-S17.
+        </p>
+    </div>
+</section>
+<footer class="main-footer">
+  <div class="main-footer__color-bar"></div>
+  <div class="main-footer__info-box">
+    <div class="logo main-footer__logo">
+      <svg width="160" height="42" viewBox="0 0 160 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M30.3496 0.864746H32.2895V13.3292C33.6344 10.9551 35.8908 9.0948 39.5708 9.0948C44.6752 9.0948 47.6443 12.5776 47.6443 17.4062V29.7512H45.7044V17.7616C45.7044 13.6068 43.3693 10.8764 39.2932 10.8764C35.3364 10.8764 32.2895 13.8836 32.2895 18.0773V29.7512H30.3496V0.864746Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M71.3859 9.56958H73.5221L64.7766 30.4639C62.9967 34.6982 60.9383 36.2022 58.0497 36.2022C56.5059 36.2022 55.398 35.9246 54.0531 35.3304L54.7251 33.6301C55.7933 34.1438 56.6642 34.3826 58.1682 34.3826C60.2655 34.3826 61.6501 33.1553 63.1541 29.6327L53.459 9.56958H55.7154L64.1037 27.6141L71.3859 9.56958Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M81.5144 24.5672V11.3512H78.5859V9.56955H81.5144V3.11938H83.4534V9.56955H90.5366V11.3512H83.4534V24.37C83.4534 27.2586 85.1546 28.2869 87.4897 28.2869C88.4783 28.2869 89.3094 28.0898 90.4571 27.5743V29.3957C89.4288 29.8705 88.4385 30.1075 87.1732 30.1075C84.0467 30.1075 81.5144 28.4063 81.5144 24.5672Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M98.6465 0.864746H100.586V13.3292C101.931 10.9551 104.186 9.0948 107.867 9.0948C112.972 9.0948 115.939 12.5776 115.939 17.4062V29.7512H114V17.7616C114 13.6068 111.665 10.8764 107.59 10.8764C103.633 10.8764 100.586 13.8836 100.586 18.0773V29.7512H98.6465V0.864746Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M153.058 29.7512H154.997V17.5228C154.997 12.4582 152.029 9.09473 147.241 9.09473C143.443 9.09473 141.266 11.192 139.96 13.4476C139.129 15.1886 138.773 13.4476 138.773 17.6422V29.7512H140.712V17.9985C140.712 13.4874 143.681 10.8763 147.083 10.8763C150.803 10.8763 153.058 13.4087 153.058 17.7615V29.7512Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M140.697 17.6422V29.7512H138.758V17.9985C138.758 13.4874 135.789 10.8763 132.387 10.8763C128.667 10.8763 126.412 13.4087 126.412 17.7615V29.7512H124.473V17.5228C124.473 12.4582 127.441 9.09473 132.228 9.09473C136.027 9.09473 138.204 11.192 139.51 13.4476C140.224 14.9767 140.697 13.4476 140.697 17.6422Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0076 17.9198C18.677 17.2867 22.12 14.6359 22.12 10.0046V9.92586C22.12 7.94705 21.3287 6.08759 20.0227 4.78078C18.3604 3.11938 15.6301 2.05127 12.226 2.05127H0.591797V22.4638H2.65018V3.95051H12.1083C17.1332 3.95051 20.0625 6.28478 20.0625 10.0046V10.0841C20.0625 14.0815 16.6186 16.4158 11.989 16.4158H11.739V18.3116L20.5364 29.7512H23.1483L14.0076 17.9198Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.22768 28.8914C3.22768 29.7822 2.50465 30.5044 1.61384 30.5044C0.723027 30.5044 0 29.7822 0 28.8914C0 27.9998 0.723027 27.2776 1.61384 27.2776C2.50465 27.2776 3.22768 27.9998 3.22768 28.8914Z" fill="#009DCD"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M72.5265 38.9499C73.413 38.9499 73.9951 38.4751 73.9951 37.7719V37.7572C73.9951 36.9918 73.4208 36.594 72.5568 36.594H71.2041V38.9499H72.5265ZM70.5996 36.0361H72.6035C73.8109 36.0361 74.6065 36.6787 74.6065 37.7339V37.7494C74.6065 38.904 73.6431 39.5008 72.504 39.5008H71.2042V41.3896H70.5996V36.0361Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M76.1484 36.0361H76.753V38.4145H79.8423V36.0361H80.446V41.3896H79.8423V38.9801H76.753V41.3896H76.1484V36.0361Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M85.8742 39.4324L84.6573 36.7012L83.4344 39.4324H85.8742ZM84.3823 35.998H84.9488L87.3885 41.3896H86.7382L86.1111 39.9747H83.1974L82.5635 41.3896H81.9434L84.3823 35.998Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M91.1362 38.7665C91.9388 38.7665 92.5122 38.3531 92.5122 37.6655V37.65C92.5122 36.9918 92.0071 36.594 91.1431 36.594H89.4913V38.7665H91.1362ZM88.8867 36.0361H91.189C91.8472 36.0361 92.3747 36.2351 92.7112 36.5715C92.9715 36.8309 93.1237 37.2054 93.1237 37.6275V37.6413C93.1237 38.5295 92.5122 39.0493 91.6716 39.2024L93.3157 41.3896H92.5736L91.0212 39.3096H89.4913V41.3896H88.8867V36.0361Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M94.918 36.0361H95.5294L97.4797 38.9576L99.4291 36.0361H100.041V41.3896H99.4369V37.0532L97.4866 39.9211H97.4563L95.5061 37.0601V41.3896H94.918V36.0361Z" fill="white"/>
+        <mask id="mask0_110_782" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="101" y="35" width="24" height="7">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M101.543 35.9436H124.213V41.4294H101.543V35.9436Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_110_782)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M105.474 39.4324L104.258 36.7012L103.033 39.4324H105.474ZM103.982 35.998H104.548L106.988 41.3896H106.338L105.711 39.9747H102.796L102.162 41.3896H101.543L103.982 35.998Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M107.949 38.7285V38.712C107.949 37.1985 109.082 35.9436 110.657 35.9436C111.628 35.9436 112.21 36.2887 112.745 36.7929L112.331 37.2357C111.881 36.8085 111.376 36.5032 110.649 36.5032C109.464 36.5032 108.577 37.4658 108.577 38.6982V38.712C108.577 39.9514 109.472 40.9226 110.649 40.9226C111.384 40.9226 111.865 40.6398 112.378 40.1512L112.776 40.5404C112.217 41.106 111.606 41.4813 110.635 41.4813C109.088 41.4813 107.949 40.2645 107.949 38.7285Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M114.33 36.0361H118.199V36.5862H114.934V38.4145H117.855V38.9646H114.934V40.8387H118.238V41.3896H114.33V36.0361Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M119.754 39.1479V36.0361H120.358V39.1099C120.358 40.2645 120.971 40.9148 121.995 40.9148C122.982 40.9148 123.609 40.3189 123.609 39.1479V36.0361H124.213V39.1029C124.213 40.6623 123.318 41.4735 121.98 41.4735C120.656 41.4735 119.754 40.6623 119.754 39.1479Z" fill="white"/>
+        </g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M127.494 36.594H125.689V36.0361H129.903V36.594H128.098V41.3896H127.494V36.594Z" fill="white"/>
+        <mask id="mask1_110_782" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="131" y="35" width="8" height="7">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M131.318 35.9436H138.682V41.4294H131.318V35.9436Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask1_110_782)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M131.449 41.3896H132.053V36.0361H131.449V41.3896Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M133.857 38.7285V38.712C133.857 37.1985 134.989 35.9436 136.564 35.9436C137.536 35.9436 138.117 36.2887 138.652 36.7929L138.24 37.2357C137.787 36.8085 137.283 36.5032 136.557 36.5032C135.371 36.5032 134.484 37.4658 134.484 38.6982V38.712C134.484 39.9514 135.379 40.9226 136.557 40.9226C137.291 40.9226 137.773 40.6398 138.285 40.1512L138.682 40.5404C138.125 41.106 137.512 41.4813 136.541 41.4813C134.996 41.4813 133.857 40.2645 133.857 38.7285Z" fill="white"/>
+        </g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M143.739 39.4324L142.523 36.7012L141.3 39.4324H143.739ZM142.248 35.998H142.815L145.254 41.3896H144.603L143.976 39.9747H141.063L140.428 41.3896H139.809L142.248 35.998Z" fill="white"/>
+        <mask id="mask2_110_782" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="146" y="35" width="10" height="7">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M146.752 35.9592H155.675V41.4295H146.752V35.9592Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask2_110_782)">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M146.752 36.0361H147.356V40.8318H150.37V41.3896H146.752V36.0361Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M151.66 40.6096L152.036 40.1651C152.593 40.6701 153.129 40.9227 153.871 40.9227C154.589 40.9227 155.064 40.5404 155.064 40.0128V39.9973C155.064 39.5008 154.796 39.2172 153.672 38.9802C152.44 38.7121 151.875 38.3151 151.875 37.4356V37.42C151.875 36.5793 152.617 35.9592 153.634 35.9592C154.414 35.9592 154.972 36.1815 155.515 36.6174L155.163 37.0844C154.666 36.6788 154.169 36.5032 153.618 36.5032C152.923 36.5032 152.478 36.8846 152.478 37.3664V37.3819C152.478 37.887 152.755 38.1698 153.932 38.4215C155.125 38.6818 155.676 39.1177 155.676 39.9367V39.9514C155.676 40.8699 154.911 41.4658 153.847 41.4658C152.999 41.4658 152.303 41.183 151.66 40.6096Z" fill="white"/>
+        </g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M156.934 10.8322H157.375C157.47 10.8322 157.562 10.8288 157.654 10.8219C157.744 10.8167 157.824 10.7977 157.894 10.7674C157.963 10.7371 158.019 10.6895 158.062 10.6247C158.106 10.5598 158.127 10.4716 158.127 10.3583C158.127 10.264 158.107 10.1871 158.068 10.1291C158.029 10.0703 157.98 10.0262 157.92 9.99506C157.859 9.96479 157.792 9.94576 157.719 9.93711C157.645 9.92846 157.571 9.92414 157.498 9.92414H156.934V10.8322ZM156.506 9.57387H157.569C158.227 9.57387 158.555 9.84284 158.555 10.3782C158.555 10.6342 158.484 10.8201 158.342 10.9395C158.199 11.0588 158.022 11.1289 157.809 11.1497L158.62 12.3959H158.16L157.395 11.1825H156.934V12.3959H156.506V9.57387ZM155.442 10.9879C155.442 11.2828 155.494 11.5544 155.597 11.8052C155.701 12.056 155.841 12.2731 156.019 12.4573C156.196 12.6407 156.406 12.786 156.648 12.8915C156.89 12.9979 157.15 13.0506 157.427 13.0506C157.703 13.0506 157.962 12.9979 158.202 12.8915C158.442 12.786 158.651 12.6407 158.831 12.4573C159.01 12.2731 159.152 12.056 159.256 11.8052C159.36 11.5544 159.412 11.2828 159.412 10.9879C159.412 10.6982 159.36 10.4266 159.256 10.1732C159.152 9.92068 159.01 9.70273 158.831 9.51938C158.651 9.33517 158.442 9.19073 158.202 9.08436C157.962 8.97884 157.703 8.92522 157.427 8.92522C157.15 8.92522 156.89 8.97884 156.648 9.08436C156.406 9.19073 156.196 9.33517 156.019 9.51938C155.841 9.70273 155.701 9.92068 155.597 10.1732C155.494 10.4266 155.442 10.6982 155.442 10.9879ZM155.014 10.9879C155.014 10.6463 155.078 10.3272 155.206 10.0305C155.333 9.7356 155.507 9.48046 155.727 9.26598C155.948 9.05236 156.204 8.88284 156.496 8.76003C156.788 8.63636 157.098 8.57495 157.427 8.57495C157.755 8.57495 158.065 8.63636 158.357 8.76003C158.65 8.88284 158.906 9.05236 159.126 9.26598C159.347 9.48046 159.52 9.7356 159.648 10.0305C159.776 10.3272 159.84 10.6463 159.84 10.9879C159.84 11.3339 159.776 11.6539 159.648 11.9479C159.52 12.242 159.347 12.4962 159.126 12.7099C158.906 12.9244 158.65 13.0921 158.357 13.2158C158.065 13.3395 157.755 13.4009 157.427 13.4009C157.098 13.4009 156.788 13.3395 156.496 13.2158C156.204 13.0921 155.948 12.9244 155.727 12.7099C155.507 12.4962 155.333 12.242 155.206 11.9479C155.078 11.6539 155.014 11.3339 155.014 10.9879Z" fill="white"/>
+        </svg>        
+        <!--<img src="logo.png" alt="logo1">-->
+    </div>
+    <nav class="main-footer__menu-box">
+      <ul class="main-footer__menu">
+        <li><a href="#">Privacy Policy</a></li><a href="#"></a>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Cookie Settings</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul> 
+    </nav>
+    <div class="main-footer__chat-icon">
+      <i class="fal fa-comments-alt"></i>
+    </div>
+  </div>
+  <p class="main-footer__copyright">©2022 Rhythm Pharmaceuticals, 
+    Inc. All rights reserved. Rhythm, IMCIVREE, GOLD Academy, LEAD for Rare Obesity, 
+    Uncovering Rare Obesity, and their corresponding logos are trademarks of 
+    Rhythm Pharmaceuticals, Inc. All other trademarks are the property of their 
+    respective owners. US-IC1-2200030 (06/2022)
+  </p>
+</footer>
+<script>
+var nav = document.getElementsByTagName('header')[0];
+var menu = document.getElementsByTagName('nav')[0];
+var logo = document.getElementsByClassName('logo-svg')[0];
+var logoSibble = document.getElementsByClassName('wellcome')[0];
+var logoBox = document.getElementsByClassName('logo')[0];
+window.onscroll = function() {
+  var scrolled = window.pageYoffset || document.documentElement.scrollTop;
+  var target = nav;
+  var menuElement = menu;
+  var logoImg = logo;
+  var wellcomeBox = logoSibble;
+  var logoWrapper = logoBox;
+  
+  if(scrolled > 0) {
+    target.style.position = 'fixed';
+    target.style.top = 0 + 'px';
+    target.style.left = 0 + 'px';
+    target.style.right = 0 + 'px';
+    target.style.zIndex = 999;
+    menuElement.classList.add('scrolled');
+    logoImg.classList.add('scrolled');
+    wellcomeBox.classList.add('scrolled');
+    logoWrapper.classList.add('scrolled');
+    logoImg.setAttribute("viewBox", "0 0 175 49");
+  }
+
+  else {
+    target.style.position = 'static';
+    wellcomeBox.classList.remove('scrolled');
+    logoImg.classList.remove('scrolled');
+    menuElement.classList.remove('scrolled');
+    logoWrapper.classList.remove('scrolled');
+    logoImg.removeAttribute("viewBox", "0 0 175 49");
+  }
+
+ }
+</script>
+</body>
+</html>
