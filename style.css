@@ -428,7 +428,8 @@ filter: blur(135.914px);
 
 .about-wellcome-info::after,
 .main-info-section::after,
-.about-info-section::after {
+.about-info-section::after,
+.disease-spotlight-section::after {
   content: "";
   background: #00A8E3;
   position: absolute;
@@ -1110,4 +1111,82 @@ color: black;
 
 .rare-diseases-page .about-info-section::after {
   display: none;
+}
+
+.disease-spotlight-section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.disease-spotlight-section__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B266D;
+}
+
+.disease-spotlight-section__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  margin: 10px 0;
+}
+
+.disease-spotlight-section__multimedia-box_img-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.disease-spotlight-section__multimedia-box {
+  flex-basis: 50%;
+}
+
+.disease-spotlight-section__deeper-dive-box {
+  flex-basis: 50%;
+}
+
+.research-and-resources__box_media-content_pdf-link {
+  padding: 0 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2B266D;
+  width: 250px;
+}
+
+.disease-spotlight-section__deeper-dive-box {
+  display: flex;
+  align-items: center;
+  background-color: #E9E9F0;
+  padding: 24px 64px;
+  border-radius: 12px;
+}
+
+.disease-spotlight-section__deeper-dive_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.disease-spotlight-section__deeper-dive_link-block {
+  margin-left: 30px;
+}
+
+.disease-spotlight-section__deeper-dive_link-block .about-wellcome-info__button {
+  margin: 0;
+}
+
+.disease-spotlight-section__deeper-dive_icon {
+  padding-top: 10px;
 }
