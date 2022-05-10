@@ -932,3 +932,182 @@ color: black;
 .logo.scrolled {
   padding: 10px 20px 10px 165px;
 }
+
+.main-menu-nav_list__submenu-parrent>.main-menu-nav_list__submenu {
+  display: none;
+  position: absolute;
+  bottom: -70px;
+  left: 30px;
+  border-radius: 0 0 12px 12px;
+  padding-top: 40px;
+  align-items: flex-end;
+}
+
+.main-menu-nav_list__submenu-top-parrent {
+  position: relative;
+}
+
+.main-menu-nav_list__submenu-parrent:hover>.main-menu-nav_list__submenu,
+.main-menu-nav_list__submenu-parrent:focus>.main-menu-nav_list__submenu,
+.main-menu-nav_list__submenu-parrent:hover>.main-menu-nav_list__submenu,
+.main-menu-nav_list__submenu-parrent:focus-within>.main-menu-nav_list__submenu {
+  display: flex;
+}
+
+.main-submenu-nav_listitem {
+  padding: 20px;
+  background-color: #2B266D;
+}
+
+.main-submenu-nav_listitem>a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-for-not-white-bg);
+  text-decoration: none;
+}
+
+.rare-diseases-page .home-hero-block-wrapper.about-page-modified1 {
+  margin-top: 110px;
+  margin-bottom: 68px;
+}
+
+.main-submenu-nav_listitem.sub-active,
+.main-submenu-nav_listitem:hover {
+  background-color: #E9E9F0;
+}
+
+.main-submenu-nav_listitem.left-sibling {
+  border-radius: 0 0 0 12px;
+}
+
+.main-submenu-nav_listitem.right-sibling {
+  border-radius: 0 0 12px 0;
+}
+
+.main-submenu-nav_listitem.sub-active>a,
+.main-submenu-nav_listitem:hover>a {
+  color: #2B266D;
+}
+
+.main-menu-nav.scrolled .main-submenu-nav_listitem>a {
+  color: #212529;
+}
+
+.main-menu-nav.scrolled .main-submenu-nav_listitem.sub-active>a,
+.main-menu-nav.scrolled .main-submenu-nav_listitem:hover>a {
+  color: var(--color-for-not-white-bg);
+}
+
+.main-menu-nav.scrolled .main-submenu-nav_listitem {
+  background-color: #DBDBDB;
+}
+
+.main-menu-nav.scrolled .main-submenu-nav_listitem.sub-active,
+.main-menu-nav.scrolled .main-submenu-nav_listitem:hover {
+  background-color: #00A8E3;
+}
+
+.main-menu-nav.scrolled .main-menu-nav_list__submenu-parrent>.main-menu-nav_list__submenu {
+  bottom: -65px;
+}
+
+.about-info-section.rare-diseases-page {
+  background-image: none;
+  padding-top: 60px;
+}
+
+.about-page-bg.rare-diseases-page {
+  background-size: 100% 92.5%;
+}
+
+.about-page-bg.rare-diseases-page.scrolled {
+  padding-top: 188px;
+}
+
+.about-page-image__box.type-pf-obesity-box {
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.type-pf-obesity-box__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  margin-top: 20px;
+}
+
+.type-pf-obesity-box__text-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B266D;
+  display: block;
+  align-self: flex-start;
+}
+
+.type-pf-obesity-box__img-wrapper {
+  flex-basis: 60%;
+  max-width: 60%;
+  position: relative;
+}
+
+.type-pf-obesity-box__img {
+  border-radius: 17px;
+}
+
+.type-pf-obesity-box__img_search-plus {
+  padding: 1px 6px;
+  font-size: 20px;
+  color: #2B266D;
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  background-color: white;
+  border-radius: 15%;
+}
+
+.rare-diseases-page .about-wellcome-info__multimedia-block.video-wrapper {
+  flex-basis: 40%;
+  max-width: 40%;
+}
+
+.rare-diseases-page .about-page-image-additional-text>span {
+  margin-bottom: 0;
+  font-size: 2vw;
+}
+
+.about-page-image-additional-text>span.rare-diseases-page-video-add-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 22px;
+  color: #212529;
+  margin-top: 25px;
+}
+
+.rare-diseases-page .about-page-image-additional-text {
+  flex-basis: 60%;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.rare-diseases-page .about-info-section>.about-page-image__box {
+  width: 80%;
+  margin: 55px auto;
+  padding-top: 20px;
+}
+
+.rare-diseases-page .about-info-section {
+  padding: 0;
+}
+
+.rare-diseases-page .about-info-section::after {
+  display: none;
+}

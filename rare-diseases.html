@@ -16,7 +16,7 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <title>About page</title>
 </head>
-<body class="about-page-bg">
+<body class="about-page-bg rare-diseases-page">
     <section class="top-gradient-section">
     <header>
         <div class="header-top-section">
@@ -55,12 +55,17 @@
                 <span class="wellcome-text">Medical Resource and Knowledge Gateway</span> 
             </div>
         </div>
-        <nav class="main-menu-nav"><ul class="main-menu-nav_list">
+        <nav class="main-menu-nav"><ul class="main-menu-nav_list main-menu-nav_list__submenu-top-parrent">
             <li class="main-menu-nav_listitem"><a href="#">Home</a></li>
-            <li class="main-menu-nav_listitem active"><a href="#">About Rhythm Pharmaceuticals</a></li>
-            <li class="main-menu-nav_listitem"><a href="#">Rare Genetic Diseases of Obesity</a>
-                <ul>
-
+            <li class="main-menu-nav_listitem"><a href="#">About Rhythm Pharmaceuticals</a></li>
+            <li class="main-menu-nav_listitem active main-menu-nav_list__submenu-parrent">
+                <a href="#">Rare Genetic Diseases of Obesity</a>
+                <ul class="main-menu-nav_list__submenu">
+                    <li class="main-submenu-nav_listitem sub-active left-sibling"><a href="#">What are rare genetic diseases of obesity?</a></li>
+                    <li class="main-submenu-nav_listitem"><a href="#">The MC4R Pathway</a></li>
+                    <li class="main-submenu-nav_listitem"><a href="#">Key Clinical Characteristic</a></li>
+                    <li class="main-submenu-nav_listitem"><a href="#">Importance of Diagnosis</a></li>
+                    <li class="main-submenu-nav_listitem right-sibling"><a href="#">Genetic Testing</a></li>
                 </ul>
             </li>
             <li class="main-menu-nav_listitem"><a href="#">Our Research</a></li>
@@ -73,32 +78,84 @@
     <div class="slider-home-page">
         <div class="home-hero-block-wrapper about-page-modified1">
             <div class="home-hero-block_text-block about-page-modified2">
-                <h3 class="home-hero-block_text-block__heading">About Rhythm Pharmaceuticals</h3>
-                <p class="home-hero-block_text-block__description about-page-modified3">We’re dedicated to understanding 
-                    and treating the underlying causes of rare genetic diseases of obesity
-                    to address the impact that these diseases can have on patients and on 
-                    those who love them.
+                <h3 class="home-hero-block_text-block__heading">Rare Genetic Diseases of Obesity</h3>
+                <p class="home-hero-block_text-block__description about-page-modified3">The symptoms are there. Can you recognize them? Learn about the underlying pathophysiology, key
+                    clinical characteristics, and the importance of diagnosis below.                    
                 </p>  
             </div>
-          <div class="about-page-image__box">
-            <img class="about-page-image" src="img/about-hero.jpg" alt="hero-face">
-            <p class="about-page-image-additional-text">Individuals with rare genetic 
-                diseases of obesity are often affected with hyperphagia (pathological, 
-                insatiable hunger) and early-onset, severe obesity.1,2
-            </p>  
-          </div>
         </div>
+    </div>
+    <div class="about-info-section rare-diseases-page">
+        <div class="about-page-image__box type-pf-obesity-box">
+            <h3 class="type-pf-obesity-box__text-heading">
+                What are rare genetic diseases of obesity?</h3>
+            <p class="type-pf-obesity-box__text">
+                General obesity is a subset of obesity that arises from the interactions 
+                between an at-risk genetic profile and environmental risk factors, such 
+                as physical inactivity, excessive caloric intake, the intrauterine environment, 
+                medications, and socioeconomic status.<sup>1</sup> 
+            </p> 
+            <p class="type-pf-obesity-box__text">Rare genetic diseases of obesity represent 
+                a subset of obesity that impactful variant in a gene, resulting in the loss of 
+                function of key systems that regulate energy balance.<sup>2</sup> The melanocortin-4 
+                receptor (MC4R) pathway is one such key system.<sup>2-4</sup>
+            </p>
+            <div class="type-pf-obesity-box__img-wrapper">
+                <a class="type-pf-obesity-box__img_search-plus" href="img/types-of-obesity2.jpg" target="_blank">
+                    <i class="fas fa-search-plus"></i>
+                </a>   
+                <img class="type-pf-obesity-box__img" src="img/types-of-obesity2.jpg" alt="hero-face">
+            </div>
+          </div>
     </div>
     <div class="about-info-section">
         <div class="about-page-image__box">
-            <img class="about-page-image info-section_modified1" src="img/about-table.png" alt="hero-face">
+            <div class="about-wellcome-info__multimedia-block video-wrapper">
+                <video id="wellcomeVideo" class="about-wellcome-info__multimedia-block_video" src="img/Genetic_Diseases.mp4" poster="img/video-poster2.jpg" preload></video>
+                <svg id="playpause" width="53" height="61" viewBox="0 0 53 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M49.7343 25.1564L8.4844 0.769648C5.13278 -1.21075 0 0.711055 0 5.60957V54.3711C0 58.7656 4.76954 61.414 8.4844 59.2109L49.7343 34.836C53.4139 32.668 53.4257 27.3243 49.7343 25.1564Z" fill="white" fill-opacity="0.75"/>
+                </svg>            
+            </div>
             <p class="about-page-image-additional-text info-section_modified2">
-                <span>Our Pipeline</span>
-                Rhythm has developed setmelanotide, a melanocortin-4 receptor (MC4R) agonist that 
-                may restore impaired MC4R pathway function caused by genetic variants that occur 
-                upstream of the receptor.3
-            </p>  
+                <span>The MC4R Pathway</span>
+                TThe MC4R pathway in the hypothalamus is a key signaling pathway
+                responsible for regulating hunger, food intake, and energy expenditure,
+                which consequently affects body weight.2-4 Learn more about this pathway
+                in the Rare Genetic Diseases of Obesity: Mechanism of Disease video.
+                <span class="rare-diseases-page-video-add-text">
+                    The importance of the MC4R pathway’s control of energy balance 
+                    has made it a com pelling target for potential weight-regulating 
+                    treatments.
+                </span>
+            </p>
           </div>
+    </div>
+    <div class="disease-spotlight-section">
+        <h3 class="disease-spotlight-section__heading">Disease Spotlight </h3>
+        <p class="disease-spotlight-section__text">
+            Learn more about Bardet-Biedl syndrome (BBS).
+        </p>
+        <div class="disease-spotlight-section__multimedia-box">
+            <img src="img/research-and-resources-1.png" alt="research-and-resources-image" class="research-and-resources__box_media-content_img">
+            <a href="img/sample.pdf" class="research-and-resources__box_media-content_pdf-link">
+                Download the Bardet-Biedl syndrome handout for a quick 
+                introduction to the disease (PDF)
+            </a>
+            <div class="disease-spotlight-section__deeper-dive-box">
+                <div class="disease-spotlight-section__deeper-dive_icon">
+                    <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M80.4998 12H15.5C11.3594 12 8 15.3594 8 19.5V74.4999C8 78.6405 11.3594 81.9998 15.5 81.9998H80.4998C84.6404 81.9998 87.9998 78.6405 87.9998 74.4999V19.5C87.9998 15.3594 84.6404 12 80.4998 12ZM13 19.5C13 18.125 14.125 17 15.5 17H23V27H13V19.5ZM82.9998 74.4998C82.9998 75.8748 81.8748 76.9998 80.4998 76.9998H15.5C14.125 76.9998 13 75.8748 13 74.4998V32H82.9998V74.4998ZM82.9998 27H28V17H80.4998C81.8748 17 82.9998 18.125 82.9998 19.5V27Z" fill="#2B266D"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M56.7064 57.285C57.6152 57.285 58.1109 56.1149 57.4388 55.461L40.7742 38.3189C40.1672 37.6427 39 38.1115 39 39.0724V64.25C39 65.1612 40.0975 65.6979 40.7742 65.0018L45.852 59.7788L48.9603 67.3461C49.1883 67.8817 49.7906 68.1494 50.3279 67.9151L53.2084 66.66C53.5842 66.4883 53.8442 66.1089 53.8442 65.6691C53.8442 65.522 53.815 65.3817 53.7621 65.2537L50.4902 57.285H56.7064Z" fill="#2B266D"/>
+                        </svg>                        
+                </div>
+                <div class="disease-spotlight-section__deeper-dive_icon">
+                    <span class="disease-spotlight-section__deeper-dive_text"></span>
+                    <a class="disease-spotlight-section__deeper-dive_link-button" href="#">
+
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="connect-section-box">
         <p class="connect-section-box__text"><span>References</span> 
@@ -180,6 +237,7 @@ var menu = document.getElementsByTagName('nav')[0];
 var logo = document.getElementsByClassName('logo-svg')[0];
 var logoSibble = document.getElementsByClassName('wellcome')[0];
 var logoBox = document.getElementsByClassName('logo')[0];
+var bodyElement = document.getElementsByTagName('body')[0];
 window.onscroll = function() {
   var scrolled = window.pageYoffset || document.documentElement.scrollTop;
   var target = nav;
@@ -187,6 +245,7 @@ window.onscroll = function() {
   var logoImg = logo;
   var wellcomeBox = logoSibble;
   var logoWrapper = logoBox;
+  var bodyPaddingFix = bodyElement;
   
   if(scrolled > 0) {
     target.style.position = 'fixed';
@@ -194,6 +253,7 @@ window.onscroll = function() {
     target.style.left = 0 + 'px';
     target.style.right = 0 + 'px';
     target.style.zIndex = 999;
+    bodyPaddingFix.classList.add('scrolled');
     menuElement.classList.add('scrolled');
     logoImg.classList.add('scrolled');
     wellcomeBox.classList.add('scrolled');
@@ -207,8 +267,25 @@ window.onscroll = function() {
     logoImg.classList.remove('scrolled');
     menuElement.classList.remove('scrolled');
     logoWrapper.classList.remove('scrolled');
+    bodyPaddingFix.classList.remove('scrolled');
     logoImg.removeAttribute("viewBox", "0 0 175 49");
   }
+
+  var video = document.getElementById('wellcomeVideo');
+  var videoControls = document.getElementById('video-controls');
+  var playButton = document.getElementById('playpause');
+  var playButtonHandler = ()=> {
+    if (video.paused) {
+      video.play();
+      playButton.classList.toggle("hidden");
+    }
+    else {
+      video.pause();
+      playButton.classList.toggle("hidden");
+    }
+    
+  };
+  playButton.onclick = playButtonHandler;
 
  }
 </script>
