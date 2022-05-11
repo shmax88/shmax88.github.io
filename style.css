@@ -429,7 +429,8 @@ filter: blur(135.914px);
 .about-wellcome-info::after,
 .main-info-section::after,
 .about-info-section::after,
-.disease-spotlight-section::after {
+.disease-spotlight-section::after,
+.research-and-resources__box.key-clinical-characteristics-block::after {
   content: "";
   background: #00A8E3;
   position: absolute;
@@ -1151,7 +1152,7 @@ color: black;
   flex-basis: 50%;
 }
 
-.research-and-resources__box_media-content_pdf-link {
+.key-clinical-characteristics-block .research-and-resources__box_media-content_pdf-link {
   padding: 0 30px;
   font-style: normal;
   font-weight: 700;
@@ -1189,4 +1190,68 @@ color: black;
 
 .disease-spotlight-section__deeper-dive_icon {
   padding-top: 10px;
+}
+
+.key-clinical-characteristics__pdf-link {
+  display: block;
+  flex-basis: 80%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2B266D;
+  margin-bottom: 40px;
+}
+
+.key-clinical-characteristics_mode {
+  flex-wrap: wrap;
+}
+
+.research-and-resources__box.key-clinical-characteristics-block {
+  flex-basis: unset;
+  background-image: url(img/tall-sections-bg.jpg);
+  background-size: 100% 100%;
+  margin: 110px 0 110px;
+  position: relative;
+}
+
+.key-clinical-characteristics-block .research-and-resources__box__text-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.key-clinical-characteristics-block .research-and-resources__box_heading {
+  padding-top: 40px;
+}
+
+.research-and-resources__box_media-holder.key-clinical-characteristics_mode {
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.key-clinical-characteristics-block .research-and-resources__box_media-content {
+  flex-basis: 40%;
+}
+
+.key-clinical-characteristics-block .research-and-resources__box_media-content_img {
+  max-width: 340px;
+}
+
+.key-clinical-characteristics-block .research-and-resources__box_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-for-not-white-bg);
+
+}
+
+.key-clinical-characteristics-block .research-and-resources__box_description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-for-not-white-bg);
 }
