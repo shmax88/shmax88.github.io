@@ -432,7 +432,8 @@ filter: blur(135.914px);
 .about-info-section::after,
 .disease-spotlight-section::after,
 .research-and-resources__box::after,
-.disease-spotlight-section__deeper-dive-box.solo-block::after {
+.disease-spotlight-section__deeper-dive-box.solo-block::after,
+.disease-spotlight-section__deeper-dive-box.bottom-block::after {
   content: "";
   background: #00A8E3;
   position: absolute;
@@ -1023,7 +1024,7 @@ color: black;
 }
 
 .about-page-bg.rare-diseases-page {
-  background-size: 100% 25%;
+  background-size: 100% 22%;
 }
 
 .about-page-bg.rare-diseases-page.scrolled {
@@ -1363,6 +1364,7 @@ color: black;
   margin: 0 auto;
   padding: 20px 7vw 20px 3vw;
   position: relative;
+  margin-bottom: 110px;
 }
 
 .disease-spotlight-section__deeper-dive-box.solo-block 
@@ -1376,4 +1378,35 @@ color: black;
 
 .research-and-resources__box.key-clinical-characteristics-block.genetic-testing-block {
   margin-bottom: 20px;
+}
+
+.disease-spotlight-section__deeper-dive-box.bottom-block {
+  flex-direction: column;
+  flex-basis: unset;
+  background-color: transparent;
+  width: var(--container-width-by-design);
+  margin: 0 auto 110px;
+  padding: unset;
+  position: relative;
+}
+
+.rare-diseases-bottom-block__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B266D;
+  margin-bottom: 20px;
+}
+
+.bottom-block .disease-spotlight-section__deeper-dive_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.bottom-block .about-wellcome-info__button {
+  margin-top: 20px;
 }
