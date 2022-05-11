@@ -84,6 +84,7 @@ select {
   --color-for-not-white-bg: white;
   --flex-basis-size: 40%;
   --main-buttons-color: #CE0058;
+  --container-width-by-design: 80%;
 }
 
 body {
@@ -408,7 +409,7 @@ filter: blur(135.914px);
 }
 
 .home-events-block__content-wrapper {
-  width: calc(80% + 25px);
+  width: calc(var(--container-width-by-design) + 25px);
   margin: 0 auto;
   background: #E9E9F0;
   display: flex;
@@ -430,7 +431,8 @@ filter: blur(135.914px);
 .main-info-section::after,
 .about-info-section::after,
 .disease-spotlight-section::after,
-.research-and-resources__box.key-clinical-characteristics-block::after {
+.research-and-resources__box::after,
+.disease-spotlight-section__deeper-dive-box.solo-block::after {
   content: "";
   background: #00A8E3;
   position: absolute;
@@ -542,7 +544,7 @@ filter: blur(135.914px);
 }
 
 .research-and-resources__box_media-content_img {
-  max-width: 215px;
+  max-width: 20vw;
   margin-bottom: 15px;
   border-radius: 12px;
 }
@@ -609,7 +611,7 @@ filter: blur(135.914px);
 
 .connect-section-box__text {
   margin: 20px auto;
-  width: 80%;
+  width: var(--container-width-by-design);
   text-align: left;
   font-style: normal;
   font-weight: 400;
@@ -638,12 +640,12 @@ filter: blur(135.914px);
 .main-footer__info-box {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: var(--container-width-by-design);
   margin: 0 auto;
 }
 
 .main-footer__copyright {
-  width: 80%;
+  width: var(--container-width-by-design);
   margin: 0 auto;
   text-align:left;
   font-style: normal;
@@ -823,7 +825,7 @@ color: black;
 }
 
 .home-hero-block_text-block.about-page-modified2 {
-  flex-basis: 80%;
+  flex-basis: var(--container-width-by-design);
   text-align: center;
   margin-left: unset;
 }
@@ -1021,7 +1023,7 @@ color: black;
 }
 
 .about-page-bg.rare-diseases-page {
-  background-size: 100% 92.5%;
+  background-size: 100% 25%;
 }
 
 .about-page-bg.rare-diseases-page.scrolled {
@@ -1030,7 +1032,7 @@ color: black;
 
 .about-page-image__box.type-pf-obesity-box {
   flex-direction: column;
-  width: 80%;
+  width: var(--container-width-by-design);
   margin: 0 auto;
   align-items: center;
 }
@@ -1078,6 +1080,7 @@ color: black;
 .rare-diseases-page .about-wellcome-info__multimedia-block.video-wrapper {
   flex-basis: 40%;
   max-width: 40%;
+  padding-bottom: 20px;
 }
 
 .rare-diseases-page .about-page-image-additional-text>span {
@@ -1101,7 +1104,7 @@ color: black;
 }
 
 .rare-diseases-page .about-info-section>.about-page-image__box {
-  width: 80%;
+  width: var(--container-width-by-design);
   margin: 55px auto;
   padding-top: 20px;
 }
@@ -1115,11 +1118,8 @@ color: black;
 }
 
 .disease-spotlight-section {
-  width: 80%;
+  width: var(--container-width-by-design);
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   position: relative;
 }
 
@@ -1142,14 +1142,22 @@ color: black;
 .disease-spotlight-section__multimedia-box_img-wrapper {
   display: flex;
   align-items: center;
+  flex-basis: 50%;
+  flex-shrink: 0;
+  flex-grow: 2;
 }
 
 .disease-spotlight-section__multimedia-box {
-  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .disease-spotlight-section__deeper-dive-box {
   flex-basis: 50%;
+  flex-shrink: 2;
+  flex-grow: 0;
 }
 
 .key-clinical-characteristics-block .research-and-resources__box_media-content_pdf-link {
@@ -1166,7 +1174,7 @@ color: black;
   display: flex;
   align-items: center;
   background-color: #E9E9F0;
-  padding: 24px 64px;
+  padding: 24px 3vw;
   border-radius: 12px;
 }
 
@@ -1181,7 +1189,7 @@ color: black;
 }
 
 .disease-spotlight-section__deeper-dive_link-block {
-  margin-left: 30px;
+  margin-left: 1.5vw;
 }
 
 .disease-spotlight-section__deeper-dive_link-block .about-wellcome-info__button {
@@ -1192,9 +1200,18 @@ color: black;
   padding-top: 10px;
 }
 
+.disease-spotlight-section .research-and-resources__box_media-content_pdf-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4vw;
+  line-height: 20px;
+  color: #2B266D;
+  padding: 0 2vw;
+}
+
 .key-clinical-characteristics__pdf-link {
   display: block;
-  flex-basis: 80%;
+  flex-basis: var(--container-width-by-design);
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1216,7 +1233,7 @@ color: black;
 }
 
 .key-clinical-characteristics-block .research-and-resources__box__text-container {
-  width: 80%;
+  width: var(--container-width-by-design);
   margin: 0 auto;
 }
 
@@ -1225,7 +1242,7 @@ color: black;
 }
 
 .research-and-resources__box_media-holder.key-clinical-characteristics_mode {
-  width: 80%;
+  width: var(--container-width-by-design);
   text-align: center;
   justify-content: center;
   margin: auto;
@@ -1254,4 +1271,109 @@ color: black;
   font-size: 16px;
   line-height: 22px;
   color: var(--color-for-not-white-bg);
+}
+
+.key-clinical-characteristics-block .research-and-resources__box__text-container {
+  min-height: unset;
+}
+
+.research-and-resources__box.key-clinical-characteristics-block.w-o_bg {
+  background: none;
+}
+
+.key-clinical-characteristics-block.w-o_bg .research-and-resources__box_media-content:nth-last-of-type(2) {
+  margin-right: 0;
+}
+
+.key-clinical-characteristics-block.w-o_bg .research-and-resources__box_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B266D;
+}
+
+.key-clinical-characteristics-block.w-o_bg .research-and-resources__box_description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.key-clinical-characteristics-block.w-o_bg .research-and-resources__box__text-container {
+  min-height: unset;
+}
+
+.key-clinical-characteristics-block.w-o_bg 
+.research-and-resources__box_media-content:nth-of-type(1) 
+.research-and-resources__box_media-content_img {
+  margin: 0 30px 20px 0;
+}
+
+.key-clinical-characteristics-block.w-o_bg 
+.research-and-resources__box_media-content:nth-of-type(3) 
+.research-and-resources__box_media-content_img {
+  margin-right: 30px;
+}
+
+.rare-diseases-page #playpause {
+  top: calc(50% - 60px);
+}
+
+.genetic-testing-block 
+.research-and-resources__box_media-holder.key-clinical-characteristics_mode {
+  flex-direction: column;
+  align-items: center;
+}
+
+.key-clinical-characteristics-block.genetic-testing-block 
+.research-and-resources__box_media-content>span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #212529;
+}
+
+.key-clinical-characteristics-block.genetic-testing-block 
+.research-and-resources__box_media-content {
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.key-clinical-characteristics-block.genetic-testing-block 
+.research-and-resources__box_media-content_img {
+  max-width: 60vw;
+  margin-bottom: 0;
+}
+
+.genetic-testing-block__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  text-align: left;
+  margin: 20px auto 40px;
+}
+
+.disease-spotlight-section__deeper-dive-box.solo-block {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 7vw 20px 3vw;
+  position: relative;
+}
+
+.disease-spotlight-section__deeper-dive-box.solo-block 
+.disease-spotlight-section__deeper-dive_text {
+  font-size: 1.3vw;
+}
+
+.research-and-resources__box.key-clinical-characteristics-block.genetic-testing-block::after {
+  display: none;
+}
+
+.research-and-resources__box.key-clinical-characteristics-block.genetic-testing-block {
+  margin-bottom: 20px;
 }
