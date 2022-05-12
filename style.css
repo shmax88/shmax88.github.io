@@ -433,7 +433,8 @@ filter: blur(135.914px);
 .disease-spotlight-section::after,
 .research-and-resources__box::after,
 .disease-spotlight-section__deeper-dive-box.solo-block::after,
-.disease-spotlight-section__deeper-dive-box.bottom-block::after {
+.disease-spotlight-section__deeper-dive-box.bottom-block::after,
+.more-events-box::after, .featured-events-block::after {
   content: "";
   background: #00A8E3;
   position: absolute;
@@ -1409,4 +1410,167 @@ color: black;
 
 .bottom-block .about-wellcome-info__button {
   margin-top: 20px;
+}
+
+.events-page__top-text-block {
+  width: var(--container-width-by-design);
+  text-align: center;
+  margin: 60px auto 110px;
+  position: relative;
+}
+
+.events-page__top-text-block::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background-color: #00A8E3;
+  opacity: 0.5;
+  bottom: -60px;
+  left: 15%;
+  z-index: 4;
+}
+
+.events-page__main-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 52px;
+  color: var(--color-for-not-white-bg);
+  margin-bottom: 20px;
+}
+
+.events-page__top-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-for-not-white-bg);
+}
+
+.featured-events-block {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.featured-events-block__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--color-for-not-white-bg);
+  margin-bottom: 20px;
+}
+
+.featured-events-block__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-events-block__img {
+  max-width: 50vw;
+  border-radius: 12px 0 0 12px;
+}
+
+.featured-events-block__event-info {
+  background-color: #E9E9F0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.featured-events-block__event-name {  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2B266D;
+}
+
+.featured-events-block__event-place-date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #212529;
+  margin-bottom: 30px;
+}
+
+.featured-events-block .event-button-with-details-1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.featured-events-block .event-button-with-details-1>i {
+  font-size: 24px;
+}
+
+.events-page {
+  background-image: url(img/background-about.jpg);
+  background-size: 100% 100%;
+}
+
+.featured-events-block.more-events {
+  background-image: url(img/more-events-bg.jpg);
+  background-size: 100% 100%;
+  padding-top: 40px;
+}
+
+.more-events .featured-events-block__media {
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.more-events .featured-events-block__media:last-of-type {
+  margin-right: 0;
+}
+
+.more-events .featured-events-block__img {
+  max-width: 25vw;
+  flex-basis: 100%;
+  border-radius: 0;
+}
+
+.more-events-box {
+  display: flex;
+  width: var(--container-width-by-design);
+  margin: 0 auto 110px;
+  position: relative;
+}
+
+.more-events .event-button-with-details-1 {
+  align-self: flex-start;
+}
+
+.more-events .featured-events-block__event-info {
+  min-height: 200px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+.more-events .featured-events-block__event-name {
+  font-size: 1.4vw;
+  line-height: 1.7vw;
+}
+
+.more-events .featured-events-block__event-place-date {
+  font-size: 1vw;
+  line-height: 1.35vw;
+  margin-top: 10px;
+}
+
+.featured-events-block.more-events .event-button-with-details-1>i {
+  font-size: 17px;
+}
+
+.featured-events-block.more-events .event-button-with-details-1 {
+  font-size: 14px;
+  line-height: 18px;
 }
