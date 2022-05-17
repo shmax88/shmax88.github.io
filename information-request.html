@@ -7,115 +7,179 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/pro.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--<script src="https://kit.fontawesome.com/2d4f9170df.js" crossorigin="anonymous"></script>-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <title>About page</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Contact page</title>
 </head>
-<body class="about-page-bg">
+<body class="contact-page with-contact-form-tabs">
     <section class="top-gradient-section">
-      <header>
-        <div class="header-top-section">
-            <div class="logo"><svg width="189" height="49" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.822 1.02h2.29v14.713c1.587-2.802 4.25-4.998 8.594-4.998 6.025 0 9.53 4.111 9.53 9.81v14.572h-2.29V20.965c0-4.904-2.756-8.127-7.567-8.127-4.67 0-8.267 3.55-8.267 8.5v13.779h-2.29V1.02M84.26 11.296h2.52L76.459 35.957c-2.1 4.998-4.53 6.773-7.94 6.773-1.822 0-3.13-.328-4.717-1.029l.793-2.007c1.26.606 2.289.888 4.064.888 2.476 0 4.11-1.448 5.885-5.606L63.1 11.296h2.663l9.901 21.298 8.596-21.299M96.214 28.998v-15.6h-3.456v-2.102h3.456V3.682h2.29v7.614h8.36v2.103h-8.36v15.366c0 3.41 2.007 4.623 4.763 4.623 1.167 0 2.148-.232 3.503-.84v2.15c-1.214.56-2.383.84-3.876.84-3.69 0-6.68-2.009-6.68-6.54M116.438 1.02h2.288v14.713c1.589-2.802 4.25-4.998 8.595-4.998 6.026 0 9.528 4.111 9.528 9.81v14.572h-2.289V20.965c0-4.904-2.756-8.127-7.566-8.127-4.67 0-8.268 3.55-8.268 8.5v13.779h-2.288V1.02M180.66 35.117h2.289V20.683c0-5.978-3.504-9.948-9.155-9.948-4.484 0-7.053 2.476-8.595 5.138-.981 2.055-1.4 0-1.4 4.951v14.293h2.288V21.245c0-5.325 3.504-8.407 7.52-8.407 4.391 0 7.053 2.989 7.053 8.127v14.152" fill="#fff"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M166.07 20.824v14.293h-2.289V21.245c0-5.325-3.503-8.407-7.519-8.407-4.391 0-7.053 2.989-7.053 8.127v14.152h-2.289V20.683c0-5.978 3.503-9.948 9.154-9.948 4.484 0 7.054 2.476 8.595 5.138.843 1.805 1.401 0 1.401 4.951M16.534 21.152c5.512-.748 9.576-3.876 9.576-9.343v-.093c0-2.336-.934-4.53-2.476-6.073-1.962-1.96-5.184-3.222-9.203-3.222H.7v24.094h2.43V4.663h11.164c5.93 0 9.388 2.755 9.388 7.146v.094c0 4.718-4.065 7.473-9.53 7.473h-.294v2.238L24.24 35.117h3.083l-10.79-13.965" fill="#fff"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.81 34.102A1.905 1.905 0 1 1 0 34.1a1.905 1.905 0 0 1 3.81.002" fill="#009DCD"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M85.606 45.974c1.047 0 1.734-.56 1.734-1.39v-.018c0-.903-.678-1.373-1.698-1.373h-1.596v2.781h1.56Zm-2.274-3.439h2.365c1.425 0 2.365.759 2.365 2.004v.018c0 1.363-1.138 2.067-2.482 2.067h-1.534v2.23h-.714v-6.319ZM89.88 42.535h.714v2.807h3.647v-2.807h.712v6.319h-.712V46.01h-3.647v2.844h-.713v-6.319M101.36 46.544l-1.436-3.224-1.443 3.224h2.879ZM99.6 42.49h.668l2.88 6.364h-.768l-.74-1.67H98.2l-.747 1.67h-.732l2.878-6.364ZM107.573 45.758c.947 0 1.624-.488 1.624-1.3v-.018c0-.777-.596-1.246-1.616-1.246h-1.949v2.564h1.941Zm-2.655-3.223h2.717c.777 0 1.4.235 1.797.632.307.306.487.748.487 1.246v.017c0 1.048-.722 1.662-1.714 1.842l1.941 2.582h-.876l-1.833-2.455h-1.805v2.455h-.714v-6.319ZM112.035 42.535h.722l2.302 3.448 2.301-3.448h.723v6.319h-.714v-5.118l-2.302 3.385h-.036l-2.302-3.377v5.11h-.694v-6.319" fill="#fff"/>
-                <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="119" y="42" width="28" height="7">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M119.854 42.426h26.758V48.9h-26.758v-6.475Z" fill="#fff"/>
-                </mask>
-                <g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
-                  <path d="m124.493 46.544-1.435-3.224-1.446 3.224h2.881Zm-1.761-4.054h.668l2.881 6.364h-.768l-.74-1.67h-3.44l-.749 1.67h-.73l2.878-6.364ZM127.414 45.713v-.02c0-1.786 1.337-3.267 3.196-3.267 1.147 0 1.833.407 2.465 1.002l-.488.523c-.532-.504-1.128-.865-1.986-.865-1.399 0-2.446 1.136-2.446 2.591v.017c0 1.462 1.057 2.609 2.446 2.609.867 0 1.435-.334 2.041-.91l.469.459c-.659.667-1.381 1.11-2.527 1.11-1.825 0-3.17-1.436-3.17-3.25M134.947 42.535h4.567v.65h-3.854v2.157h3.448v.65h-3.448v2.212h3.9v.65h-4.613v-6.319M141.348 46.208v-3.673h.713v3.628c0 1.363.723 2.13 1.932 2.13 1.164 0 1.906-.703 1.906-2.085v-3.673h.712v3.62c0 1.84-1.056 2.798-2.636 2.798-1.563 0-2.627-.958-2.627-2.745"/>
-                </g>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M150.486 43.194h-2.131v-.659h4.974v.659h-2.131v5.66h-.712v-5.66" fill="#fff"/>
-                <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="155" y="42" width="9" height="7">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M155 42.426h8.691V48.9H155v-6.475Z" fill="#fff"/>
-                </mask>
-                <g mask="url(#b)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
-                  <path d="M155.154 48.854h.713v-6.319h-.713v6.319ZM157.996 45.713v-.02c0-1.786 1.335-3.267 3.195-3.267 1.147 0 1.833.407 2.465 1.002l-.487.523c-.534-.504-1.129-.865-1.987-.865-1.399 0-2.447 1.136-2.447 2.591v.017c0 1.462 1.057 2.609 2.447 2.609.867 0 1.435-.334 2.04-.91l.469.459c-.658.667-1.381 1.11-2.527 1.11-1.823 0-3.168-1.436-3.168-3.25"/>
-                </g>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="m169.661 46.544-1.435-3.224-1.444 3.224h2.879ZM167.9 42.49h.67l2.879 6.364h-.768l-.741-1.67h-3.438l-.75 1.67h-.731l2.879-6.364Z" fill="#fff"/>
-                <mask id="c" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="173" y="42" width="11" height="7">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M173.219 42.444h10.532v6.457h-10.532v-6.457Z" fill="#fff"/>
-                </mask>
-                <g mask="url(#c)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
-                  <path d="M173.219 42.535h.712v5.66h3.558v.659h-4.27v-6.319M179.012 47.933l.443-.525c.658.597 1.29.895 2.166.895.848 0 1.409-.451 1.409-1.074v-.018c0-.587-.317-.921-1.644-1.201-1.453-.316-2.121-.785-2.121-1.823v-.019c0-.992.876-1.724 2.076-1.724.921 0 1.58.263 2.221.777l-.416.551c-.586-.478-1.173-.686-1.823-.686-.821 0-1.346.45-1.346 1.02v.017c0 .597.327.93 1.716 1.227 1.408.308 2.058.822 2.058 1.789v.017c0 1.084-.902 1.788-2.158 1.788-1.001 0-1.823-.334-2.581-1.01"/>
-                </g>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M185.235 12.786h.521c.112 0 .221-.004.329-.012a.82.82 0 0 0 .283-.065.452.452 0 0 0 .199-.168.56.56 0 0 0 .077-.315.478.478 0 0 0-.07-.27.46.46 0 0 0-.175-.158.713.713 0 0 0-.237-.069 2.265 2.265 0 0 0-.261-.015h-.666v1.072Zm-.505-1.485h1.255c.776 0 1.164.317 1.164.949 0 .302-.084.522-.252.662-.169.141-.378.224-.629.249l.958 1.47h-.543l-.904-1.432h-.544v1.433h-.505V11.3Zm-1.256 1.669a2.485 2.485 0 0 0 .681 1.734 2.299 2.299 0 0 0 1.662.7c.327 0 .632-.062.916-.187.282-.125.529-.296.742-.513.211-.217.378-.474.501-.77.122-.296.184-.616.184-.964 0-.342-.062-.663-.184-.962a2.407 2.407 0 0 0-.501-.772 2.385 2.385 0 0 0-.742-.513 2.254 2.254 0 0 0-.916-.188 2.3 2.3 0 0 0-1.662.701 2.503 2.503 0 0 0-.681 1.733Zm-.505 0a2.823 2.823 0 0 1 .842-2.033c.26-.252.562-.452.907-.597a2.79 2.79 0 0 1 1.099-.218c.388 0 .753.072 1.098.218.345.145.647.345.908.597a2.824 2.824 0 0 1 .842 2.032 2.81 2.81 0 0 1-1.75 2.63c-.345.146-.71.219-1.098.219a2.79 2.79 0 0 1-1.099-.219 2.91 2.91 0 0 1-.907-.597 2.81 2.81 0 0 1-.842-2.033Z" fill="#fff"/>
-              </svg>                
-                <!--<img src="logo.png" alt="logo1">-->
+        <!--<div class="top-gradient-circle-block">
+            <span class="top-gradient-circle-block__gradient"></span>
+        </div>-->
+        <header>
+          <div class="header-top-section">
+              <div class="logo"><svg width="189" height="49" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M35.822 1.02h2.29v14.713c1.587-2.802 4.25-4.998 8.594-4.998 6.025 0 9.53 4.111 9.53 9.81v14.572h-2.29V20.965c0-4.904-2.756-8.127-7.567-8.127-4.67 0-8.267 3.55-8.267 8.5v13.779h-2.29V1.02M84.26 11.296h2.52L76.459 35.957c-2.1 4.998-4.53 6.773-7.94 6.773-1.822 0-3.13-.328-4.717-1.029l.793-2.007c1.26.606 2.289.888 4.064.888 2.476 0 4.11-1.448 5.885-5.606L63.1 11.296h2.663l9.901 21.298 8.596-21.299M96.214 28.998v-15.6h-3.456v-2.102h3.456V3.682h2.29v7.614h8.36v2.103h-8.36v15.366c0 3.41 2.007 4.623 4.763 4.623 1.167 0 2.148-.232 3.503-.84v2.15c-1.214.56-2.383.84-3.876.84-3.69 0-6.68-2.009-6.68-6.54M116.438 1.02h2.288v14.713c1.589-2.802 4.25-4.998 8.595-4.998 6.026 0 9.528 4.111 9.528 9.81v14.572h-2.289V20.965c0-4.904-2.756-8.127-7.566-8.127-4.67 0-8.268 3.55-8.268 8.5v13.779h-2.288V1.02M180.66 35.117h2.289V20.683c0-5.978-3.504-9.948-9.155-9.948-4.484 0-7.053 2.476-8.595 5.138-.981 2.055-1.4 0-1.4 4.951v14.293h2.288V21.245c0-5.325 3.504-8.407 7.52-8.407 4.391 0 7.053 2.989 7.053 8.127v14.152" fill="#fff"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M166.07 20.824v14.293h-2.289V21.245c0-5.325-3.503-8.407-7.519-8.407-4.391 0-7.053 2.989-7.053 8.127v14.152h-2.289V20.683c0-5.978 3.503-9.948 9.154-9.948 4.484 0 7.054 2.476 8.595 5.138.843 1.805 1.401 0 1.401 4.951M16.534 21.152c5.512-.748 9.576-3.876 9.576-9.343v-.093c0-2.336-.934-4.53-2.476-6.073-1.962-1.96-5.184-3.222-9.203-3.222H.7v24.094h2.43V4.663h11.164c5.93 0 9.388 2.755 9.388 7.146v.094c0 4.718-4.065 7.473-9.53 7.473h-.294v2.238L24.24 35.117h3.083l-10.79-13.965" fill="#fff"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.81 34.102A1.905 1.905 0 1 1 0 34.1a1.905 1.905 0 0 1 3.81.002" fill="#009DCD"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M85.606 45.974c1.047 0 1.734-.56 1.734-1.39v-.018c0-.903-.678-1.373-1.698-1.373h-1.596v2.781h1.56Zm-2.274-3.439h2.365c1.425 0 2.365.759 2.365 2.004v.018c0 1.363-1.138 2.067-2.482 2.067h-1.534v2.23h-.714v-6.319ZM89.88 42.535h.714v2.807h3.647v-2.807h.712v6.319h-.712V46.01h-3.647v2.844h-.713v-6.319M101.36 46.544l-1.436-3.224-1.443 3.224h2.879ZM99.6 42.49h.668l2.88 6.364h-.768l-.74-1.67H98.2l-.747 1.67h-.732l2.878-6.364ZM107.573 45.758c.947 0 1.624-.488 1.624-1.3v-.018c0-.777-.596-1.246-1.616-1.246h-1.949v2.564h1.941Zm-2.655-3.223h2.717c.777 0 1.4.235 1.797.632.307.306.487.748.487 1.246v.017c0 1.048-.722 1.662-1.714 1.842l1.941 2.582h-.876l-1.833-2.455h-1.805v2.455h-.714v-6.319ZM112.035 42.535h.722l2.302 3.448 2.301-3.448h.723v6.319h-.714v-5.118l-2.302 3.385h-.036l-2.302-3.377v5.11h-.694v-6.319" fill="#fff"/>
+                  <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="119" y="42" width="28" height="7">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M119.854 42.426h26.758V48.9h-26.758v-6.475Z" fill="#fff"/>
+                  </mask>
+                  <g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                    <path d="m124.493 46.544-1.435-3.224-1.446 3.224h2.881Zm-1.761-4.054h.668l2.881 6.364h-.768l-.74-1.67h-3.44l-.749 1.67h-.73l2.878-6.364ZM127.414 45.713v-.02c0-1.786 1.337-3.267 3.196-3.267 1.147 0 1.833.407 2.465 1.002l-.488.523c-.532-.504-1.128-.865-1.986-.865-1.399 0-2.446 1.136-2.446 2.591v.017c0 1.462 1.057 2.609 2.446 2.609.867 0 1.435-.334 2.041-.91l.469.459c-.659.667-1.381 1.11-2.527 1.11-1.825 0-3.17-1.436-3.17-3.25M134.947 42.535h4.567v.65h-3.854v2.157h3.448v.65h-3.448v2.212h3.9v.65h-4.613v-6.319M141.348 46.208v-3.673h.713v3.628c0 1.363.723 2.13 1.932 2.13 1.164 0 1.906-.703 1.906-2.085v-3.673h.712v3.62c0 1.84-1.056 2.798-2.636 2.798-1.563 0-2.627-.958-2.627-2.745"/>
+                  </g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M150.486 43.194h-2.131v-.659h4.974v.659h-2.131v5.66h-.712v-5.66" fill="#fff"/>
+                  <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="155" y="42" width="9" height="7">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M155 42.426h8.691V48.9H155v-6.475Z" fill="#fff"/>
+                  </mask>
+                  <g mask="url(#b)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                    <path d="M155.154 48.854h.713v-6.319h-.713v6.319ZM157.996 45.713v-.02c0-1.786 1.335-3.267 3.195-3.267 1.147 0 1.833.407 2.465 1.002l-.487.523c-.534-.504-1.129-.865-1.987-.865-1.399 0-2.447 1.136-2.447 2.591v.017c0 1.462 1.057 2.609 2.447 2.609.867 0 1.435-.334 2.04-.91l.469.459c-.658.667-1.381 1.11-2.527 1.11-1.823 0-3.168-1.436-3.168-3.25"/>
+                  </g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="m169.661 46.544-1.435-3.224-1.444 3.224h2.879ZM167.9 42.49h.67l2.879 6.364h-.768l-.741-1.67h-3.438l-.75 1.67h-.731l2.879-6.364Z" fill="#fff"/>
+                  <mask id="c" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="173" y="42" width="11" height="7">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M173.219 42.444h10.532v6.457h-10.532v-6.457Z" fill="#fff"/>
+                  </mask>
+                  <g mask="url(#c)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
+                    <path d="M173.219 42.535h.712v5.66h3.558v.659h-4.27v-6.319M179.012 47.933l.443-.525c.658.597 1.29.895 2.166.895.848 0 1.409-.451 1.409-1.074v-.018c0-.587-.317-.921-1.644-1.201-1.453-.316-2.121-.785-2.121-1.823v-.019c0-.992.876-1.724 2.076-1.724.921 0 1.58.263 2.221.777l-.416.551c-.586-.478-1.173-.686-1.823-.686-.821 0-1.346.45-1.346 1.02v.017c0 .597.327.93 1.716 1.227 1.408.308 2.058.822 2.058 1.789v.017c0 1.084-.902 1.788-2.158 1.788-1.001 0-1.823-.334-2.581-1.01"/>
+                  </g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M185.235 12.786h.521c.112 0 .221-.004.329-.012a.82.82 0 0 0 .283-.065.452.452 0 0 0 .199-.168.56.56 0 0 0 .077-.315.478.478 0 0 0-.07-.27.46.46 0 0 0-.175-.158.713.713 0 0 0-.237-.069 2.265 2.265 0 0 0-.261-.015h-.666v1.072Zm-.505-1.485h1.255c.776 0 1.164.317 1.164.949 0 .302-.084.522-.252.662-.169.141-.378.224-.629.249l.958 1.47h-.543l-.904-1.432h-.544v1.433h-.505V11.3Zm-1.256 1.669a2.485 2.485 0 0 0 .681 1.734 2.299 2.299 0 0 0 1.662.7c.327 0 .632-.062.916-.187.282-.125.529-.296.742-.513.211-.217.378-.474.501-.77.122-.296.184-.616.184-.964 0-.342-.062-.663-.184-.962a2.407 2.407 0 0 0-.501-.772 2.385 2.385 0 0 0-.742-.513 2.254 2.254 0 0 0-.916-.188 2.3 2.3 0 0 0-1.662.701 2.503 2.503 0 0 0-.681 1.733Zm-.505 0a2.823 2.823 0 0 1 .842-2.033c.26-.252.562-.452.907-.597a2.79 2.79 0 0 1 1.099-.218c.388 0 .753.072 1.098.218.345.145.647.345.908.597a2.824 2.824 0 0 1 .842 2.032 2.81 2.81 0 0 1-1.75 2.63c-.345.146-.71.219-1.098.219a2.79 2.79 0 0 1-1.099-.219 2.91 2.91 0 0 1-.907-.597 2.81 2.81 0 0 1-.842-2.033Z" fill="#fff"/>
+                </svg>                
+                  <!--<img src="logo.png" alt="logo1">-->
+                </div>
+              <div class="wellcome">
+                  <span class="wellcome-text">Welcome to the Rhythm Pharmaceuticals</span>
+                  <span class="wellcome-text">Medical Resource and Knowledge Gateway</span> 
               </div>
-            <div class="wellcome">
-                <span class="wellcome-text">Welcome to the Rhythm Pharmaceuticals</span>
-                <span class="wellcome-text">Medical Resource and Knowledge Gateway</span> 
+          </div>
+          <span id="mobile-menu-controls">           
+          </span>
+          <nav class="main-menu-nav">
+            <ul class="main-menu-nav_list">
+              <li class="main-menu-nav_listitem active"><a href="#">Home</a></li>
+              <li class="main-menu-nav_listitem"><a href="/about.html">About Rhythm Pharmaceuticals</a></li>
+              <li class="main-menu-nav_listitem"><a href="/rare-diseases.html">Rare Genetic Diseases of Obesity</a></li>
+              <li class="main-menu-nav_listitem"><a href="/our-research.html">Our Research</a></li>
+              <li class="main-menu-nav_listitem"><a href="/events.html">Events</a></li>
+              <li class="main-menu-nav_listitem"><a href="/resources.html">Resources</a></li>
+              <li class="main-menu-nav_listitem"><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="connect-section-box">
+                <a href="#" class="connect-section-box__button event-button-with-details-1">
+                  <i class="fal fa-users-medical"></i>
+                  CONTACT OUR FIELD MEDICAL PERSONNEL
+                </a>
+                <a href="" class="connect-section-box__button event-button-with-details-1">
+                  <i class="fal fa-file-medical"></i>
+                  SUBMIT A MEDICAL INFORMATION REQUEST
+                </a>
             </div>
-        </div>
-        <span id="mobile-menu-controls">           
-        </span>
-        <nav class="main-menu-nav">
-          <ul class="main-menu-nav_list">
-            <li class="main-menu-nav_listitem active"><a href="#">Home</a></li>
-            <li class="main-menu-nav_listitem"><a href="/about.html">About Rhythm Pharmaceuticals</a></li>
-            <li class="main-menu-nav_listitem"><a href="/rare-diseases.html">Rare Genetic Diseases of Obesity</a></li>
-            <li class="main-menu-nav_listitem"><a href="/our-research.html">Our Research</a></li>
-            <li class="main-menu-nav_listitem"><a href="/events.html">Events</a></li>
-            <li class="main-menu-nav_listitem"><a href="/resources.html">Resources</a></li>
-            <li class="main-menu-nav_listitem"><a href="/contact.html">Contact</a></li>
-          </ul>
-          <div class="connect-section-box">
-              <a href="#" class="connect-section-box__button event-button-with-details-1">
-                <i class="fal fa-users-medical"></i>
-                CONTACT OUR FIELD MEDICAL PERSONNEL
-              </a>
-              <a href="" class="connect-section-box__button event-button-with-details-1">
-                <i class="fal fa-file-medical"></i>
-                SUBMIT A MEDICAL INFORMATION REQUEST
-              </a>
-          </div>
-        </nav>
-        
-    </header>
-    <div class="slider-home-page">
-        <div class="home-hero-block-wrapper about-page-modified1">
-            <div class="home-hero-block_text-block about-page-modified2">
-                <h3 class="home-hero-block_text-block__heading">About Rhythm Pharmaceuticals</h3>
-                <p class="home-hero-block_text-block__description about-page-modified3">We’re dedicated to understanding 
-                    and treating the underlying causes of rare genetic diseases of obesity
-                    to address the impact that these diseases can have on patients and on 
-                    those who love them.
-                </p>  
+          </nav>
+          
+      </header>
+    <div class="events-page__top-text-block">
+        <h2 class="events-page__main-heading">
+            Contacts
+        </h2>
+    </div>
+  <div class="contact-page__tabs-wrapper">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Submit a Medical Information Request </button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Contact Our Field Medical Personnel</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="contact-page__form-wrapper">
+          <form action="#" class="modal-form-home" method="post">
+            <p class="form-small-text-info">*Required fields</p>
+            <div class="form-elements-inputs-wrapper">
+                <input type="text" name="input" value="" placeholder="*First name">
+                <input type="text" name="input" value="" placeholder="*Last name">
+                <select name="modal-form-home__select" id="modal-form-home__select" required>
+                  <option value="placeholder" disabled selected>*Degree</option>
+                  <option value="value1">Option 1</option>
+                  <option value="value2" >Option 2</option>
+                  <option value="value3">Option 3</option>
+                </select>
+              <select name="modal-form-home__select" id="modal-form-home__select" required>
+                <option value="placeholder" disabled selected>*Specialty</option>
+                <option value="value1">Option 1</option>
+                <option value="value2" >Option 2</option>
+                <option value="value3">Option 3</option>
+              </select>
+              <input type="text" name="input" value="" placeholder="*Address">
+              <select name="modal-form-home__select" id="modal-form-home__select" required>
+                <option value="placeholder" disabled selected>*Country</option>
+                <option value="value1">Option 1</option>
+                <option value="value2" >Option 2</option>
+                <option value="value3">Option 3</option>
+              </select>
+              <input type="text" name="input" value="" placeholder="*Postal code">
+              <input type="text" name="input" value="" placeholder="*Phone">
+              <input type="text" name="input" value="" placeholder="*Email">
+              <select name="modal-form-home__select" id="modal-form-home__select" required>
+                <option value="placeholder" disabled selected>*Response preference</option>
+                <option value="value1">Option 1</option>
+                <option value="value2" >Option 2</option>
+                <option value="value3">Option 3</option>
+              </select>
             </div>
-          <div class="about-page-image__box">
-            <img class="about-page-image" src="img/about-hero.jpg" alt="hero-face">
-            <p class="about-page-image-additional-text">Individuals with rare genetic 
-                diseases of obesity are often affected with hyperphagia (pathological, 
-                insatiable hunger) and early-onset, severe obesity.1,2
-            </p>  
-          </div>
-        </div>
+            <textarea id="user-text" name="user-text" rows="3" cols="20">*Your Request</textarea>
+            <div class="modal-form-home__buttons-wrapper">
+                <button class="modal-form-home__button-type1" type="button">RESET</button>
+                <button class="modal-form-home__button-type2" type="submit">SUBMIT</button>
+            </div>
+        </form>
+      </div>
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="contact-page__form-wrapper">
+          <form action="#" class="modal-form-home" method="post">
+            <p class="form-small-text-info">*Required fields</p>
+            <div class="form-elements-inputs-wrapper">
+                <input type="text" name="input" value="" placeholder="*First name">
+                <input type="text" name="input" value="" placeholder="*Last name">
+                <input type="email" id="email" pattern=".+@gmail\.com" required name="email" value="" placeholder="*Email">
+                <input type="text" name="input" value="" placeholder="*Phone">
+                <input type="text" name="input" value="" placeholder="*Country">
+                <input type="text" name="input" value="" placeholder="*Postal code">
+                <input type="text" name="input" value="" placeholder="*Institution/Affiliation">
+            </div>
+            <textarea id="user-text" name="user-text" rows="3" cols="20">*How can we help you?</textarea>
+            <div class="modal-form-home__buttons-wrapper">
+                <button class="modal-form-home__button-type1" type="button">RESET</button>
+                <button class="modal-form-home__button-type2" type="submit">SUBMIT</button>
+            </div>
+        </form>
+      </div>
+      </div>
     </div>
-    <div class="about-info-section">
-        <div class="about-page-image__box">
-            <img class="about-page-image info-section_modified1" src="img/about-table.png" alt="hero-face">
-            <p class="about-page-image-additional-text info-section_modified2">
-                <span>Our Pipeline</span>
-                Rhythm has developed setmelanotide, a melanocortin-4 receptor (MC4R) agonist that 
-                may restore impaired MC4R pathway function caused by genetic variants that occur 
-                upstream of the receptor.3
-            </p>  
-          </div>
-    </div>
-    <div class="connect-section-box">
-        <p class="connect-section-box__text"><span>References</span> 
-          1. Huvenne H, et al. Obes Facts. 2016;9(3):158-173. 
-          2. da Fonseca ACP, et al. J Diabetes Complications. 2017;31(10):1549-1561. 
-          3. Heymsfield SB, et al. Obesity (Silver Spring). 2014;22(suppl 1):S1-S17.
-        </p>
-    </div>
+  </div>
+    <p class="connect-section-box__text">Rhythm Pharmaceuticals Medical Information 
+      collects your personal information to address or provide a response to your 
+      medical inquiry. We may share your information with other Rhythm Pharmaceuticals 
+      colleagues to ensure that your inquiry is addressed appropriately. </p>
+    <p class="connect-section-box__text">
+      To report SUSPECTED ADVERSE REACTIONS, contact Rhythm Pharmaceuticals at 
+      RhythmSafety.sm@ppd.com or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch. 
+      We will need the information that you have given us in order to meet our regulatory 
+      requirements in relation to the safety of our medicines. It may be necessary for 
+      us to share your information with Rhythm Pharmaceuticals affiliates, business 
+      partners, service providers, and regulatory authorities located in countries 
+      besides your own. Rhythm Pharmaceuticals has implemented measures to protect 
+      the personal information you provide. If you have any further questions about 
+      the use of your personal information, please call (857) 264-4280 .
+    </p>
 </section>
 <footer class="main-footer">
   <div class="main-footer__color-bar"></div>
@@ -198,13 +262,19 @@
       navElement.classList.toggle('menu-active');
     };
     menuControls.onclick = menuControlsHandler;
-    /*slider for wellcome block mobile
-    $('.about-wellcome-info').slick({
+    /*slider for block mobile */
+    $('.mobile-slider-init').slick({
         autoplay: false,
         dots: false,
         focusOnSelect: true,
         infinite: false
-      });*/
+      });
+      $('.resources-page__bottom-info-box').slick({
+        autoplay: false,
+        dots: false,
+        focusOnSelect: true,
+        infinite: false
+      });
   } else {
     /* the viewport is less larger 415 pixels wide */
     var nav = document.getElementsByTagName('header')[0];

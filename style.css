@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Remove внутренние отступы */
+/* Remove paddings */
 ul[class],
 ol[class] {
   padding: 0;
@@ -85,6 +85,10 @@ select {
   --flex-basis-size: 40%;
   --main-buttons-color: #CE0058;
   --container-width-by-design: 80%;
+  --main-dark-color: #2b266d;
+  --main-dark-text-color: #212529;
+  --decor-bg-and-border-color: #00A8E3;
+  --main-light-bg-color: #E9E9F0;
 }
 
 body {
@@ -94,19 +98,23 @@ body {
   background-position: 0 80px;
 }
 
+#mobile-menu-controls {
+  display: none;
+}
+
 .top-gradient-section>header {
     z-index: 3;
     position: relative;
 }
 .logo {
-    background-color: #2b266d;
+    background-color: var(--main-dark-color);
     padding: 25px 33px 25px 165px;
 }
 .header-top-section {
     display: flex;
 }
 .wellcome {
-    background: #00A8E3;
+    background: var(--decor-bg-and-border-color);
     color: var(--color-for-not-white-bg);
     display: flex;
     align-items: start;
@@ -159,8 +167,16 @@ filter: blur(135.914px);
 }*/
 
 .main-menu-nav {
-  margin-top: 40px;
+  /*margin-top: 40px;
   padding: var(--main-padding);
+  width: var(--container-width-by-design);
+  margin: 40px auto 0;*/
+  margin-top: 40px;
+}
+
+.main-menu-nav>ul {
+  width: var(--container-width-by-design);
+  margin: 0 auto;
 }
 
 .main-menu-nav_list {
@@ -176,12 +192,14 @@ filter: blur(135.914px);
 
 .main-menu-nav_listitem.active, .main-menu-nav_listitem:hover {
   background-color: black;
-  border-bottom: 4px solid #00A8E3;
+  border-bottom: 4px solid var(--decor-bg-and-border-color);
 }
 
 .main-menu-nav_listitem>a {
   text-decoration: none;
   color: var(--color-for-not-white-bg);
+  font-size: 1.33vw;
+  line-height: 1.7vw;
 }
 
 .home-hero-block-wrapper {
@@ -305,7 +323,7 @@ filter: blur(135.914px);
 .slick-dots li.slick-active button:before,
 .slick-dots li:hover button:before
  {
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 .slick-dots li button:before {
   font-size: 12px;
@@ -325,7 +343,7 @@ filter: blur(135.914px);
 }*/
 
 .event-icon-box {
-  background: #2B266D;
+  background: var(--main-dark-color);
   text-align: center;
   color: var(--color-for-not-white-bg);
   padding: 28px 20px;
@@ -358,7 +376,7 @@ filter: blur(135.914px);
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   margin-bottom: 15px;
 }
 
@@ -368,7 +386,7 @@ filter: blur(135.914px);
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .event-button-with-details-1 {
@@ -389,7 +407,7 @@ filter: blur(135.914px);
 }
 
 .event-button-with-details-2 {
-  background: #FFFFFF;
+  background: white;
   border: 1px solid var(--main-buttons-color);
   border-radius: 8px;
   font-style: normal;
@@ -411,7 +429,7 @@ filter: blur(135.914px);
 .home-events-block__content-wrapper {
   width: calc(var(--container-width-by-design) + 25px);
   margin: 0 auto;
-  background: #E9E9F0;
+  background: var(--main-light-bg-color);
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
@@ -434,9 +452,13 @@ filter: blur(135.914px);
 .research-and-resources__box::after,
 .disease-spotlight-section__deeper-dive-box.solo-block::after,
 .disease-spotlight-section__deeper-dive-box.bottom-block::after,
-.more-events-box::after, .featured-events-block::after {
+.featured-events-block.more-events::after, .featured-events-block::after,
+.data-presentation-additional-text-box::after,
+.our-research__text-box::after, .resources-page__bottom-info-box::after,
+.contact-page .connect-section-box::after,
+.site-map-block__heading::after {
   content: "";
-  background: #00A8E3;
+  background: var(--decor-bg-and-border-color);
   position: absolute;
   bottom: -60px;
   left: calc(50% - 40px);
@@ -483,7 +505,7 @@ filter: blur(135.914px);
 }
 
 .about-wellcome-info__heading {
-  background: #2B266D;
+  background: var(--main-dark-color);
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -494,9 +516,9 @@ filter: blur(135.914px);
 }
 
 .about-wellcome-info__description {
-  background: #E9E9F0;
+  background: var(--main-light-bg-color);
   padding: 20px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -582,13 +604,13 @@ filter: blur(135.914px);
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   display: block;
   margin-bottom: 40px;
 }
 
 .research-and-resources__box-text {
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .connect-section-box {
@@ -608,7 +630,7 @@ filter: blur(135.914px);
   font-size: 34px;
   line-height: 40px;
   text-align: center;
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 
 .connect-section-box__text {
@@ -619,7 +641,7 @@ filter: blur(135.914px);
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   margin-top: 55px;
 }
 
@@ -629,7 +651,7 @@ filter: blur(135.914px);
 }
 
 .main-footer {
-  background: #2B266D;
+  background: var(--main-dark-color);
 }
 
 .main-footer__color-bar {
@@ -670,7 +692,7 @@ filter: blur(135.914px);
   font-size: 48px;
   background-color: white;
   border-radius: 12px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   text-align: center;
   padding-top: 7px;
   cursor: pointer;
@@ -718,7 +740,7 @@ filter: blur(135.914px);
 }
 
 .modal-bg-wrapper {
-  background-color:#2b266d;
+  background-color: var(--main-dark-color);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -726,7 +748,7 @@ filter: blur(135.914px);
 }
 
 .modal-form-home {
-  background: #E9E9F0;
+  background: var(--main-light-bg-color);
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   padding: 40px 65px;
@@ -741,7 +763,7 @@ filter: blur(135.914px);
   font-size: 20px;
   line-height: 26px;
   text-align: center;
-  color: #2B266D;
+  color: var(--main-dark-color);
   margin-bottom: 40px;
 }
 
@@ -750,7 +772,7 @@ filter: blur(135.914px);
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .modal-form-home>select:active,
@@ -759,7 +781,8 @@ filter: blur(135.914px);
   outline: none;
 }
 
-.modal-form-home>select {
+.modal-form-home select,
+.modal-form-home input {
   color: #777777;
   border: none;
   padding: 10px 40px 8px 15px;
@@ -812,7 +835,7 @@ color: black;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   margin-bottom: 75px;
 }
 
@@ -865,7 +888,7 @@ color: black;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   padding: 0 30px;
   flex-basis: 30%;
 }
@@ -910,13 +933,13 @@ color: black;
 
 .main-menu-nav.scrolled {
   margin-top: 0;
-  background-color: #fff;
+  background-color: white;
   padding-bottom: 4px;
   padding-top: 20px;
 }
 
 .main-menu-nav.scrolled .main-menu-nav_listitem>a {
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 
 .main-menu-nav.scrolled .main-menu-nav_listitem.active>a, 
@@ -943,10 +966,11 @@ color: black;
   display: none;
   position: absolute;
   bottom: -70px;
-  left: 30px;
+  left: 24px;
   border-radius: 0 0 12px 12px;
   padding-top: 40px;
   align-items: flex-end;
+  width: calc(100% - 20px);
 }
 
 .main-menu-nav_list__submenu-top-parrent {
@@ -962,14 +986,14 @@ color: black;
 
 .main-submenu-nav_listitem {
   padding: 20px;
-  background-color: #2B266D;
+  background-color: var(--main-dark-color);
 }
 
 .main-submenu-nav_listitem>a {
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 1vw;
+  line-height: 17px;
   color: var(--color-for-not-white-bg);
   text-decoration: none;
 }
@@ -981,7 +1005,7 @@ color: black;
 
 .main-submenu-nav_listitem.sub-active,
 .main-submenu-nav_listitem:hover {
-  background-color: #E9E9F0;
+  background-color: var(--main-light-bg-color);
 }
 
 .main-submenu-nav_listitem.left-sibling {
@@ -994,11 +1018,11 @@ color: black;
 
 .main-submenu-nav_listitem.sub-active>a,
 .main-submenu-nav_listitem:hover>a {
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 
 .main-menu-nav.scrolled .main-submenu-nav_listitem>a {
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .main-menu-nav.scrolled .main-submenu-nav_listitem.sub-active>a,
@@ -1012,11 +1036,11 @@ color: black;
 
 .main-menu-nav.scrolled .main-submenu-nav_listitem.sub-active,
 .main-menu-nav.scrolled .main-submenu-nav_listitem:hover {
-  background-color: #00A8E3;
+  background-color: var(--decor-bg-and-border-color);
 }
 
 .main-menu-nav.scrolled .main-menu-nav_list__submenu-parrent>.main-menu-nav_list__submenu {
-  bottom: -65px;
+  bottom: -68px;
 }
 
 .about-info-section.rare-diseases-page {
@@ -1028,7 +1052,7 @@ color: black;
   background-size: 100% 22%;
 }
 
-.about-page-bg.rare-diseases-page.scrolled {
+body.scrolled {
   padding-top: 188px;
 }
 
@@ -1044,7 +1068,7 @@ color: black;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   margin-top: 20px;
 }
 
@@ -1053,7 +1077,7 @@ color: black;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   display: block;
   align-self: flex-start;
 }
@@ -1068,10 +1092,11 @@ color: black;
   border-radius: 17px;
 }
 
-.type-pf-obesity-box__img_search-plus {
+.type-pf-obesity-box__img_search-plus,
+.type-pf-obesity-box__img_download {
   padding: 1px 6px;
   font-size: 20px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   position: absolute;
   left: 2%;
   top: 2%;
@@ -1095,7 +1120,7 @@ color: black;
   font-weight: 400;
   font-size: 1vw;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   margin-top: 25px;
 }
 
@@ -1130,14 +1155,14 @@ color: black;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 
 .disease-spotlight-section__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   margin: 10px 0;
 }
 
@@ -1168,14 +1193,14 @@ color: black;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   width: 250px;
 }
 
 .disease-spotlight-section__deeper-dive-box {
   display: flex;
   align-items: center;
-  background-color: #E9E9F0;
+  background-color: var(--main-light-bg-color);
   padding: 24px 3vw;
   border-radius: 12px;
 }
@@ -1185,7 +1210,7 @@ color: black;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   padding-bottom: 10px;
   display: block;
 }
@@ -1207,7 +1232,7 @@ color: black;
   font-weight: 700;
   font-size: 1.4vw;
   line-height: 20px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   padding: 0 2vw;
 }
 
@@ -1218,7 +1243,7 @@ color: black;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   margin-bottom: 40px;
 }
 
@@ -1292,7 +1317,7 @@ color: black;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 
 .key-clinical-characteristics-block.w-o_bg .research-and-resources__box_description {
@@ -1300,7 +1325,7 @@ color: black;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .key-clinical-characteristics-block.w-o_bg .research-and-resources__box__text-container {
@@ -1335,7 +1360,7 @@ color: black;
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .key-clinical-characteristics-block.genetic-testing-block 
@@ -1355,7 +1380,7 @@ color: black;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   text-align: left;
   margin: 20px auto 40px;
 }
@@ -1396,7 +1421,7 @@ color: black;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #2B266D;
+  color: var(--main-dark-color);
   margin-bottom: 20px;
 }
 
@@ -1405,7 +1430,7 @@ color: black;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #212529;
+  color: var(--main-dark-text-color);
 }
 
 .bottom-block .about-wellcome-info__button {
@@ -1424,7 +1449,7 @@ color: black;
   position: absolute;
   width: 70%;
   height: 1px;
-  background-color: #00A8E3;
+  background-color: var(--decor-bg-and-border-color);
   opacity: 0.5;
   bottom: -60px;
   left: 15%;
@@ -1475,7 +1500,7 @@ color: black;
 }
 
 .featured-events-block__event-info {
-  background-color: #E9E9F0;
+  background-color: var(--main-light-bg-color);
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -1488,7 +1513,7 @@ color: black;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #2B266D;
+  color: var(--main-dark-color);
 }
 
 .featured-events-block__event-place-date {
@@ -1496,7 +1521,7 @@ color: black;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #212529;
+  color: var(--main-dark-text-color);
   margin-bottom: 30px;
 }
 
@@ -1520,6 +1545,7 @@ color: black;
   background-image: url(img/more-events-bg.jpg);
   background-size: 100% 100%;
   padding-top: 40px;
+  position: relative;
 }
 
 .more-events .featured-events-block__media {
@@ -1574,3 +1600,1642 @@ color: black;
   font-size: 14px;
   line-height: 18px;
 }
+
+nav.breadcrumb {
+  width: var(--container-width-by-design);
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.breadcrumb ul {
+  display: inline-flex;
+  list-style-type: none;
+  text-align: left;
+  padding-inline-start: unset;
+  margin-right: 10%;
+}
+
+.breadcrumb ul>li {
+  color: var(--decor-bg-and-border-color);
+}
+
+.breadcrumb ul>li>a {
+  color: var(--decor-bg-and-border-color);
+  text-decoration: none;
+}
+
+.breadcrumb ul>li>i {
+  padding-right: 15px;
+}
+/*.breadcrumb li:first-child::before {
+  content: "";
+}*/
+
+.event-detail .events-page__top-text-block {
+  margin-top: 40px;
+}
+
+.event-detail .events-page__main-heading {
+  margin-bottom: 30px;
+}
+
+.event-detail .events-page__top-text-block {
+  margin-bottom: 40px;
+}
+
+.event-detail .events-page__top-text-block::after {
+  display: none;
+}
+
+.event-detail .top-big-block .featured-events-block__media {
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.event-detail .top-big-block .featured-events-block__img {
+  border-radius: 12px 12px 0 0;
+  flex-basis: 60%;
+  max-width: 59vw;
+}
+
+.event-detail .top-big-block .featured-events-block__event-info {
+  border-radius: 0 0 12px 12px;
+}
+
+.event-detail-page__additional-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+  margin: 0 0 12px;
+}
+
+.event-detail .top-big-block .featured-events-block__event-name {
+  margin: 30px 0 12px;
+}
+
+.event-detail .top-big-block .featured-events-block__event-place-date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+}
+
+.event-detail .top-big-block .featured-events-block__event-info {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.event-detail .top-big-block .event-button-with-details-1 {
+  height: min-content;
+  margin-top: 30px;
+  display: table;
+}
+
+.event-detail .top-big-block .event-button-with-details-1>svg {
+  margin-right: 20px;
+  transform: translateY(3px);
+}
+
+.event-detail .top-big-block .event-button-with-details-1>span {
+  display: table-cell;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.event-detail .featured-events-block::after {
+  display: none;
+}
+
+.event-detail .featured-events-block {
+  margin-bottom: 100px;
+}
+
+.event-detail .featured-events-block.more-events {
+  background-image: url(img/data-presentation-bg.jpg);
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.event-detail .more-events .featured-events-block__img {
+  border-radius: 12px 12px 0 0;
+}
+
+.data-presentation-additional-text-box {
+  width: var(--container-width-by-design);
+  margin: 25px auto 110px;
+  position: relative;
+}
+
+.data-presentation-additional-text-box__heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--main-dark-color);
+}
+
+.data-presentation-additional-text-box__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+}
+
+.event-detail .more-events-box {
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-detail .more-events .featured-events-block__media {
+  flex-basis: calc(30% - 20px);
+  margin-bottom: 30px;
+}
+
+.event-detail .more-events .featured-events-block__media:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.event-detail .more-events .featured-events-block__img {
+  max-width: calc(25vw - 20px);
+}
+
+.event-detail .event-button-with-details-1>i {
+  padding-right: 12px;
+}
+
+.events-page.our-research-page {
+  background-size: 100% 45%;
+  background-repeat: no-repeat;
+}
+
+.our-research-page .events-page__top-text {
+  text-align: left;
+}
+
+.our-research-page .events-page__top-text>span {
+  display: block;
+  margin: 20px 0;
+}
+
+.our-research-page .events-page__top-text-block::after {
+  display: none;
+}
+
+.our-research-page .events-page__top-text-block {
+  margin-bottom: 90px;
+}
+
+.our-research__text-box {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.our-research__text-box_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--main-dark-color);
+  text-align: center;
+  width: var(--container-width-by-design);
+  margin: 0 auto 40px;
+}
+
+.our-research__text-box_paragraph {
+  width: var(--container-width-by-design);
+  margin: 0 auto 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+  background-color: var(--main-light-bg-color);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.our-research__text-box_paragraph>span {
+  font-weight: 700;
+}
+
+.our-research__text-box.variant2 {
+  background-image: url(img/our-research-text-block-bg.jpg);
+  background-size: 100% 100%;
+}
+
+.variant2 .our-research__text-box_heading {
+  color: var(--color-for-not-white-bg);
+  padding-top: 40px;
+}
+
+.our-research__text-box_additional-heading-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--color-for-not-white-bg);
+  margin-bottom: 20px;
+}
+
+.our-research__text-mini-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--main-dark-text-color);
+  width: var(--container-width-by-design);
+  margin: 40px auto 20px;
+}
+
+.our-research__text-box_paragraph a {
+  color: var(--main-dark-text-color);
+}
+
+.our-research__text-box.variant2.common-bg {
+  background-image: url(img/our-research-bg-2.jpg);
+}
+
+.resources-page {
+  background-image: url(img/background-about.jpg);
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+
+.resources-page .events-page__top-text-block::after,
+.resources-page .main-info-section::before,
+.resources-page .research-and-resources__box::after {
+  display: none;
+}
+
+.resources-page .research-and-resources__box_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--main-dark-color);
+  margin-bottom: 20px;
+}
+
+.resources-page .main-info-section {
+  background-image: none;
+}
+
+.resources-page .research-and-resources__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.resources-page .research-and-resources__box_media-content_img {
+  max-width: calc(25vw - 20px);
+}
+
+.resources-page .research-and-resources__box_media-holder {
+  flex-basis: calc(33% - 20px);
+  margin-right: 30px;
+}
+
+.resources-page .research-and-resources__box>div:nth-child(3) {
+  margin-right: 0;
+}
+
+.resources-page .research-and-resources__box__text-container {
+  min-height: auto;
+  flex-basis: 100%;
+}
+
+.resources-page .main-info-section {
+  display: block;
+  width: var(--container-width-by-design);
+  margin: 0 auto 110px;
+}
+
+.resources-page .research-and-resources__box_description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+}
+
+.resources-page .research-and-resources__box_media-content_pdf-link {
+  margin-bottom: 0;
+}
+
+.resources-page .research-and-resources__box_description {
+  margin-top: 20px;
+}
+
+.resources-page .featured-events-block__event-info {
+  background: linear-gradient(180deg, #E9E9F0 0%, rgba(233, 233, 240, 0.0001) 100%);
+  padding-top: 40px;
+}
+
+.resources-page__bottom-general-wrapper {
+  width: var(--container-width-by-design);
+  margin: 0 auto;
+}
+
+/*.resources-page .featured-events-block__event-info {
+  margin-top: 60px;
+}*/
+
+.resources-page__bottom-text-and-button-wrapper {
+  background-color: var(--main-light-bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resources-page .featured-events-block__event-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+}
+
+.resources-page .featured-events-block__event-place-date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+  margin: 12px auto 20px;
+}
+
+.resources-page .featured-events-block__event-place-date {
+  flex-basis: 60%;
+}
+
+.resources-page__bottom-general-wrapper .event-button-with-details-1 {
+  flex-basis: 35%;
+  text-align: center;
+}
+
+.resources-page__bottom-info-box {
+  display: flex;
+  width: var(--container-width-by-design);
+  margin: 40px auto 110px;
+  justify-content: center;
+  position: relative;
+}
+
+.resources-page .research-and-resources__box_media-content {
+  position: relative;
+}
+
+.resources-page .type-pf-obesity-box__img_download {
+  right: 5%;
+  top: 45%;
+  left: unset;
+}
+
+.contact-page {
+  background-image: url(img/contacts-bg.jpg);
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+}
+
+.contact-page .connect-section-box {
+  width: 40%;
+  margin: 0 auto 110px;
+  position: relative;
+}
+
+.contact-page__middle-text-block {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--main-dark-text-color);
+}
+
+.contact-page__middle-text-block>span {
+  display: block;
+  font-weight: 700;
+  margin: 10px auto 20px;
+}
+
+.contact-page .events-page__top-text-block::after {
+  display: none;
+}
+
+.contact-page .connect-section-box__button:nth-of-type(2) {
+  margin-left: unset;
+  margin-top: 120px;
+}
+
+.contact-page .connect-section-box::after {
+  bottom: 110px;
+}
+
+.contact-page .connect-section-box__text {
+  margin-top: 0;
+}
+
+.contact-page__form-wrapper {
+  text-align: center;
+}
+
+.contact-page__form-wrapper .modal-form-home {
+  margin: 0 auto 60px;
+}
+
+.contact-page__tabs-wrapper .nav {
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.form-small-text-info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--main-dark-text-color);
+  text-align: left;
+}
+
+.contact-page #nav-home-tab {
+  margin-right: 30px;
+}
+
+.contact-page .nav-tabs {
+  border-bottom: none;
+}
+
+/*.contact-page #nav-tab {
+  position: relative;
+}
+
+.contact-page .nav-tabs .nav-item.show .nav-link, 
+.contact-page .nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border: none;
+  outline: none;
+}*/
+.contact-page .contact-page__tabs-wrapper #nav-tab .nav-link {
+  border: none;
+  outline: none;
+  padding-bottom: 0;
+  background-color: transparent;
+  color: var(--color-for-not-white-bg);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.contact-page .nav-tabs .nav-link.active {
+  position: relative;
+}
+
+.contact-page .nav-tabs .nav-link.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--decor-bg-and-border-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contact-page .modal-form-home {
+  padding: 40px 90px;
+  width: 75%;
+  box-shadow: none;
+}
+
+.form-elements-inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-page .modal-form-home input {
+  background-image: none;
+}
+
+.contact-page .modal-form-home select, 
+.contact-page .modal-form-home input {
+  margin-bottom: 0;
+  margin-right: 30px;
+  flex-basis: calc(50% - 15px);
+}
+
+.contact-page .modal-form-home select:nth-child(even), 
+.contact-page .modal-form-home input:nth-child(even) {
+  margin-right: 0;
+}
+
+.contact-page .modal-form-home textarea {
+  margin: 55px 0;
+  color: #777777;
+  border: none;
+  padding: 10px 40px 8px 15px;
+  border-radius: 12px;
+}
+
+.contact-page.with-contact-form-tabs {
+  background-size: 100% 100%;
+}
+
+.with-contact-form-tabs .events-page__top-text-block {
+  margin-bottom: 0;
+}
+
+.with-contact-form-tabs .events-page__main-heading {
+  margin-bottom: 30px;
+}
+
+.thank-box {
+  padding: 40px 90px;
+  width: calc(75% - 15px);
+  background: var(--main-light-bg-color);
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.thank-box__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--main-dark-color);
+  margin-top: 15vh;
+  margin-bottom: 20px;
+}
+
+.thank-box__icon-box {
+  font-size: 96px;
+  color:  var(--main-dark-color);
+}
+
+.thank-box .modal-form-home__buttons-wrapper {
+  justify-content: center;
+  margin-top: 25vh;
+}
+
+.contact-page.site-map-page {
+  background-size: 100% 70%;
+}
+
+.site-map-block {
+  width: var(--container-width-by-design);
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.site-map-block__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--main-dark-color);
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.site-map-block__heading::after {
+  bottom: -38px;
+  left: 0;
+}
+
+.site-map-block__list-item>a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+  text-decoration: none;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.contact-page.not-found-page {
+  background-size: 100% 90%;
+}
+
+.not-found-page .events-page__main-heading {
+  margin-bottom: 20px;
+}
+
+.not-found-page__additional-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--color-for-not-white-bg);
+}
+
+.not-found-page .about-wellcome-info__button {
+  margin: 25px auto 50px;
+}
+
+.not-found-page .site-map-block {
+  text-align: center;
+  margin-bottom: 260px;
+}
+
+.not-found-page__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+}
+
+.cookies-info-block .cookies-info-block__content {
+  width: 60%;
+  margin: 170px auto;
+}
+
+.modal-bg-wrapper.cookies-info-block {
+  height: auto;
+}
+
+.cookies-info-block__decorated-box .accordion-button {
+  justify-content: space-between;
+}
+
+.cookies-info-block__decorated-box .accordion-button>span:nth-child(1n) {
+  margin-left: 40px;
+}
+
+.cookies-info-block__decorated-box .accordion-button::after {
+  position: absolute;
+  left: 20px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23CE0058'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.cookies-info-block__decorated-box .accordion-button:not(.collapsed) {
+  color: var(--main-buttons-color);
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.cookies-info-block__decorated-box .accordion-button:focus {
+  box-shadow: none;
+}
+
+.cookies-info-block__decorated-box .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23CE0058'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.cookies-info-block__decorated-box .accordion-button {
+  color: var(--main-buttons-color);
+}
+
+.cookies-info-block__decorated-box .accordion-body {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.cookies-info-block__decorated-box .accordion-item {
+  margin-bottom: 20px;
+}
+
+.cookies-info-block__decorated-box .accordion-item, 
+.cookies-info-block__decorated-box .accordion-collapse,
+.cookies-info-block__decorated-box .accordion-header,
+.cookies-info-block__decorated-box .accordion-item .accordion-button,
+.cookies-info-block__decorated-box .accordion-item:last-of-type .accordion-button.collapsed {
+  border-radius: 12px;
+}
+
+.cookies-info-block__content {
+  background-color: var(--main-light-bg-color);
+  padding: 40px 65px;
+  border-radius: 12px;
+}
+
+.cookies-info-block__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--main-dark-color);
+  margin-bottom: 20px;
+}
+
+.cookies-info-block__description {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--main-dark-text-color);
+}
+
+.cookies-info-block__content .toggle-button {
+position: relative;
+ display: inline-block;
+ width: 22px;
+ height: 15px;
+ margin: 0;
+ vertical-align: top;
+ background: white;
+ border: 1px solid #bbc1e1;
+ border-radius: 30px;
+ outline: none;
+ cursor: pointer;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+ margin-left: 5px;
+}
+
+.cookies-info-block__content .toggle-button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 1.5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-dark-color);
+  border-radius: 50%;
+  transform: translateX(0);
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.cookies-info-block__content .toggle-button:checked::after {
+  transform: translateX(100%);
+  background-color: white;  
+}
+
+.cookies-info-block__content .toggle-button:checked {
+  background-color: var(--main-dark-color);
+}
+
+#headingTwo .accordion-button {
+  justify-content: end;
+}
+
+#headingTwo .accordion-button>span:first-of-type {
+  margin-right: auto;
+}
+
+.main-menu-nav .connect-section-box {
+  display: none;
+}
+
+#accordion-mobile-additional-menu {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 415px) {
+  /*set up new values to css-variables */
+  :root {
+    --container-width-by-design: 90%;
+  }
+  /*cookies-mobile */ 
+  .cookies-info-block .cookies-info-block__content {
+    width: 90%;
+    margin: 10vh auto;
+  }
+  .cookies-info-block__content {
+    padding: 5vh 5vw;
+  }
+  .cookies-info-block__decorated-box .accordion-button {
+    font-size: 3vw;
+  }
+  /*modal home */
+  .modal-form-home {
+    width: 90%;
+    padding: 5vh 5vw;
+  }
+  .modal-form-home__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-form-home__button-type1, .modal-form-home__button-type2 {
+    font-size: 3.75vw;
+  }
+  .modal-form-home__buttons-wrapper {
+    flex-direction: column;
+  }
+  .modal-form-home__button-type1 {
+    order: 2;
+  }
+  .modal-form-home__button-type2 {
+    order: 1;
+  }
+  /*index page */
+  .header-top-section {
+    flex-direction: column;
+  }
+  .logo {
+    padding: 15px;
+  }
+  .logo-svg {
+    width: 110px;
+    height: 27px;
+  }
+  .wellcome-text {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+  .wellcome {
+    padding: 6px 0;  
+  }
+  .home-hero-block_img__img {
+    max-width: 60vw;
+  }
+  .slick-initialized .slick-slide.home-hero-block-wrapper {
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(0);
+  }
+  .home-hero-block_img {
+    padding-bottom: 25px;
+  }
+  .home-hero-block_text-block__heading {
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--main-dark-color);
+    padding: 0 15px;
+  }
+  body {
+    background-size: 150% 80%;
+    background-position: 0 -120px;
+    background-repeat: no-repeat;
+  }
+  .home-hero-block_text-block {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home-hero-block_text-block__description {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--main-dark-text-color);
+    max-width: unset;
+    padding: 0 15px;
+  }
+  .slick-dots {
+    bottom: -60px;
+    top: unset;
+  }
+  .home-events-block {
+    margin-top: 110px;
+  }
+  .slick-list.draggable {
+    max-height: 550px;
+  }
+  .home-events-block__content-wrapper {
+    width: 90%;
+    flex-direction: column;
+  }
+  .home-events-block__content-wrapper img {
+    max-width: 90vw;
+  }
+  .event-icon-box {
+    border-radius: 12px 12px 0 0;
+  }
+  .home-hero-block_img__shadow1 {
+    width: 50vw;
+    z-index: 3;
+    left: -40px;
+    top: 180px;
+  }
+  .home-hero-block_img__shadow2 {
+    width: 80vw;
+    left: -100px;
+    top: 120px;
+    transform: rotate(180deg);
+    filter: blur(40px);
+  }
+  .event-icon-box__icon {
+    display: none;
+  }
+  .event-buttons-wrapper {
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+  .event-button-with-details-1 {
+    text-align: center;
+  }
+  .about-wellcome-info__box:first-of-type {
+    margin: 0 15px;
+  }
+  .about-wellcome-info__description {
+    height: auto;
+  }
+  .about-wellcome-info {
+    padding: 0 15px;
+  }
+  .about-wellcome-info.slick-slider {
+    margin-bottom: 110px;
+  }
+  .main-info-section {
+    flex-direction: column;
+  }
+  .research-and-resources__box_media-holder {
+    flex-direction: row;
+    margin: 0 15px;
+  }
+  .research-and-resources__box_media-content_img {
+    max-width: calc(45vw - 7.5px);
+  }
+  .main-info-section::before {
+    display: none;
+  }
+  .research-and-resources__box_media-content:nth-last-of-type(2) {
+    margin-right: 15px;
+  }
+  .main-info-section {
+    background-image: none;
+  }
+  .research-and-resources__box {
+    background-image: url(img/our-research-bg-2.jpg);
+    background-size: 100% 100%;
+    margin: 0 0 20px 0;
+  }
+  .research-and-resources__box__text-container {
+    text-align: center;
+    margin: 0 15px;
+  }
+  .research-and-resources__box-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .research-and-resources__box-text {
+    padding: 0 15px;
+  }
+  .about-wellcome-info__button {
+    margin: 20px auto;
+  }
+  .research-and-resources__box_media-content_pdf-link {
+    text-align: center;
+  }
+  .connect-section-box {
+    margin-bottom: 110px;
+    position: relative;
+    padding-top: 60px;
+    background: linear-gradient(180deg, #E9E9F0 0%, rgba(233, 233, 240, 0.0001) 100%);
+  }
+  .connect-section-box::after {
+    content: "";
+    background: var(--decor-bg-and-border-color);
+    position: absolute;
+    bottom: -60px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    z-index: 3;
+  }
+  .research-and-resources__box-text+.about-wellcome-info__button {
+    width: 80%;
+    text-align: center;
+  }
+  .connect-section-box__button.event-button-with-details-1 {
+    margin: 0 15px 15px;
+    padding: 10px
+  }
+  .connect-section-box .event-button-with-details-1>i {
+    padding-right: 10px;
+  }
+  .connect-section-box__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .main-footer__info-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 15px 0;
+    width: calc(100% - 30px);
+  }
+  .main-footer__info-box .logo {
+    padding: 0;
+    order: 1;
+    flex-basis: 40%;
+  }
+  .main-footer__chat-icon {
+    order: 2;
+    margin-top: 0;
+    flex-basis: fit-content;
+    border-radius: 50%;
+    height: auto;
+    padding: 12px;
+  }
+  .main-footer__chat-icon>img {
+    width: 48px;
+    height: 48px;
+  }
+  .main-footer__menu-box {
+    order: 3;
+    flex-basis: 70%;
+  }
+  .main-footer__menu-box {
+    padding-top: unset;
+  }
+  .main-footer__menu {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .main-footer__menu>li {
+    flex-basis: fit-content;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+  .main-footer__menu>li::after {
+    display: none;
+  }
+  .main-footer__menu>li>a {
+    font-size: 3.9vw;
+    border-right: 1px solid white;
+    padding-right: 5px;
+  }
+  .main-footer__copyright {
+    padding-top: 20px;
+    width: calc(100% - 30px);
+  }
+  #mobile-menu-controls {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 4;
+    width: 24px;
+    height: 24px;
+    background-image: url(img/burger.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .main-menu-nav {
+    display: none;
+    margin-top: 0;
+    background-color: var(--main-dark-color);
+    padding-bottom: 60px;
+  }
+  .main-menu-nav.menu-active {
+    display: block;
+  }
+  .main-menu-nav>ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-menu-nav_listitem {
+    padding: 25px 50px 0 50px;
+  }
+  .main-menu-nav_listitem>a {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    font-weight: 700;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--decor-bg-and-border-color);
+    width: 100%;
+    display: block;
+  }
+  .main-menu-nav_listitem.active, .main-menu-nav_listitem:hover,
+  .main-menu-nav_listitem:focus {
+    background-color: var(--main-light-bg-color);
+    border-bottom: none;
+    position: relative;
+  }
+  .main-menu-nav_listitem.active::after, 
+  .main-menu-nav_listitem:hover::after,
+  .main-menu-nav_listitem:focus::after {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 20%;
+    width: 8px;
+    height: 60%;
+    background: #00A8E3;
+    border-radius: 4px;
+  }
+  .main-menu-nav_listitem.active>a, .main-menu-nav_listitem:hover>a,
+  .main-menu-nav_listitem:focus>a {
+    color: var(--main-dark-color);
+    border-bottom: none;
+  }
+  .main-menu-nav .connect-section-box {
+    margin: 20px auto;
+    padding-top: 0;
+    background: none;
+    display: flex;
+    position: relative;
+  }
+  .main-menu-nav .connect-section-box::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 1px;
+    height: 80%;
+    background: #00A8E3;
+  }
+  .main-menu-nav .connect-section-box .event-button-with-details-1 {
+    background-color: transparent;
+  }
+  .main-menu-nav .connect-section-box .event-button-with-details-1>i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .wellcome.menu-active {
+    display: none;
+  }
+  #mobile-menu-controls.menu-active {
+    background-image: url(img/close.svg);
+  }
+  /*about page styles */
+  .home-hero-block_text-block.about-page-modified2 {
+    text-align: left;
+  }
+  .about-page-bg .home-hero-block_text-block__heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--color-for-not-white-bg);
+    text-align: left;
+  }
+  .home-hero-block_text-block__description.about-page-modified3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-for-not-white-bg);
+    text-align: left;
+  }
+  .about-page-image__box {
+    flex-direction: column;
+    margin: 20px auto 55px;
+  }
+  .about-page-bg {
+    background-size: 100% 100%;
+  }
+  .about-page-image {
+    flex-basis: var(--container-width-by-design);
+    max-width: 90vw;
+    margin: 40px auto;
+  }
+  .about-page-image-additional-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--main-dark-color);
+    margin-top: 20px;
+  }
+  .about-info-section {
+    padding: 0;
+  }
+  .about-page-image-additional-text.info-section_modified2 {
+    padding: 0 15px 0;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-for-not-white-bg);
+  }
+  .about-page-image-additional-text.info-section_modified2>span {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-for-not-white-bg);
+  }
+  .about-info-section>.about-page-image__box {
+    align-items: center;
+  }
+  .about-info-section {
+    background-size: 100% 140%;
+  }
+  .about-page-bg .connect-section-box::after {
+    display: none;
+  }
+  .about-page-bg .connect-section-box {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  .about-page-bg .connect-section-box__text {
+    margin-top: 0;
+  }
+ /* rare-diseases styling */
+ .rare-diseases-page .home-hero-block-wrapper.about-page-modified1 {
+   margin-top: 0;
+   margin-bottom: 70px;
+ }
+ .about-page-bg.rare-diseases-page .home-hero-block_text-block__heading {
+   padding-top: 40px;
+ }
+ .rare-diseases-page .about-info-section>.about-page-image__box {
+   margin-top: 0;
+ }
+ .type-pf-obesity-box__img-wrapper {
+   flex-basis: 100%;
+   max-width: 100%;
+   margin-top: 20px;
+ }
+  .rare-diseases-page .about-wellcome-info__multimedia-block.video-wrapper {
+    flex-basis: var(--container-width-by-design);
+    max-width: var(--container-width-by-design);
+    order: 2;
+    padding-bottom: 140px;
+    margin-top: 40px;
+ }
+  .rare-diseases-page .about-page-image-additional-text.info-section_modified2 {
+    order: 1;
+  }
+  .rare-diseases-page .about-info-section>.about-page-image__box {
+    padding-top: 0;
+  }
+  .rare-diseases-page .about-page-image-additional-text.info-section_modified2>span {
+    margin-bottom: 20px;
+  }
+  .rare-diseases-page .about-info-section>.about-page-image__box {
+    width: 100%;
+  }
+  .rare-diseases-page .about-page-image-additional-text.info-section_modified2>span.rare-diseases-page-video-add-text {
+    position: absolute;
+    bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--main-dark-text-color);
+  }
+  .rare-diseases-page #playpause {
+    top: calc(50% - 120px);
+  }
+  .rare-diseases-page .about-wellcome-info__multimedia-block_video {
+    border-radius: 12px;
+  }
+  .rare-diseases-page .about-info-section.mobile-margin-mod {
+    margin: 0 15px;
+  }
+  .disease-spotlight-section__multimedia-box {
+    flex-direction: column;
+  }
+  .disease-spotlight-section__multimedia-box_img-wrapper {
+    flex-direction: column;
+  }
+  .rare-diseases-page .research-and-resources__box_media-content_img {
+    max-width: 90vw;
+  }
+  .disease-spotlight-section .research-and-resources__box_media-content_pdf-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--main-dark-color);
+    text-align: left;
+  }
+  .disease-spotlight-section__deeper-dive-box {
+    flex-direction: column;
+  }
+  .disease-spotlight-section__deeper-dive_text {
+    text-align: center;
+  }
+  .rare-diseases-page .research-and-resources__box_media-content_pdf-link {
+    margin-bottom: 20px;
+  }
+  .research-and-resources__box_media-holder.key-clinical-characteristics_mode {
+    width: 100%;
+  }
+  .rare-diseases-page .key-clinical-characteristics-block 
+  .research-and-resources__box_media-content_img {
+    max-width: calc(45vw - 7.5px);
+  }
+  .research-and-resources__box.key-clinical-characteristics-block {
+    background-size: 100% 140%;
+  }
+  .rare-diseases-page .research-and-resources__box__text-container {
+    text-align: left;
+  }
+  .rare-diseases-page .key-clinical-characteristics-block.w-o_bg 
+  .research-and-resources__box_media-content_img {
+    /*max-width: 90vw;*/
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .key-clinical-characteristics-block.w-o_bg .research-and-resources__box_media-content:nth-of-type(3) 
+  .research-and-resources__box_media-content_img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .key-clinical-characteristics-block.w-o_bg 
+  .research-and-resources__box_media-content:nth-of-type(1) 
+  .research-and-resources__box_media-content_img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .rare-diseases-page 
+  .research-and-resources__box.key-clinical-characteristics-block.genetic-testing-block 
+  .research-and-resources__box_media-content_img {
+    max-width: 90vw;
+  }
+  .key-clinical-characteristics-block.genetic-testing-block .research-and-resources__box_media-content>span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--main-dark-text-color);
+  }
+  .genetic-testing-block__description {
+    margin: 20px 15px 40px;
+  }
+  .rare-diseases-page 
+  .research-and-resources__box.key-clinical-characteristics-block.genetic-testing-block {
+    background-size: 100% 120%;
+  }
+  .disease-spotlight-section__deeper-dive-box.solo-block {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .disease-spotlight-section__deeper-dive-box.solo-block 
+  .disease-spotlight-section__deeper-dive_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--main-dark-text-color);
+  }
+  .rare-diseases-bottom-block__heading {
+    text-align: left;
+  }
+  .bottom-block .disease-spotlight-section__deeper-dive_text {
+    text-align: left;
+  }
+  .disease-spotlight-section__deeper-dive-box.bottom-block
+  .about-wellcome-info__button {
+    width: 100%;
+    text-align: center;
+  }
+  .about-page-bg.rare-diseases-page {
+    background-size: 100% 27%;
+  }
+  #accordion-mobile-additional-menu {
+    display: block;
+  }
+  .rare-diseases-page .accordion-button::after {
+    margin: auto;
+    transform: rotate(0);
+  }
+  .rare-diseases-page .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232b266d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+  .rare-diseases-page .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232b266d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+  .rare-diseases-page .accordion-button:not(.collapsed) {
+    color: var(--main-dark-text-color);
+    background-color: var(--main-light-bg-color);
+    box-shadow: none;
+  }
+  .rare-diseases-page .accordion-button.collapsed {
+    background-color: var(--main-light-bg-color);
+  }
+  .additional-mobile-menu-nav_list-item>a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--main-dark-color);
+    text-decoration: none;
+  }
+  .additional-mobile-menu-nav_list-item {
+    padding: 15px;
+    background-color: var(--main-light-bg-color);
+  }
+  #accordion-mobile-additional-menu .accordion-body {
+    padding: 0;
+  }
+  .additional-mobile-menu-nav_list-item.active, 
+  .additional-mobile-menu-nav_list-item:hover,
+  .additional-mobile-menu-nav_list-item:focus {
+    background-color: white;
+  }
+  .additional-mobile-menu-nav_list-item.active>a, 
+  .additional-mobile-menu-nav_list-item:hover>a,
+  .additional-mobile-menu-nav_list-item:focus>a  {
+    font-weight: 700;
+  }
+  /*events page styling */
+  .events-page__main-heading {
+    text-align: left;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .events-page__top-text {
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .events-page__top-text-block::after {
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+  }
+  .featured-events-block__media {
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  .featured-events-block__img {
+    max-width: calc(90vw + 8px);
+    border-radius: 12px 12px 0 0;
+  }
+  .events-page {
+    background-size: 100% 110%;
+  }
+  .featured-events-block__heading {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .events-page__top-text-block {
+    margin-bottom: 80px;
+  }
+  .featured-events-block__event-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  .featured-events-block__event-place-date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+  .event-button-with-details-1 {
+    width: max-content;
+    align-self: flex-end;
+  }
+  .more-events-box {
+    flex-direction: column;
+  }
+  .more-events .featured-events-block__img {
+    display: none;
+  }
+  .more-events .featured-events-block__event-info {
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .more-events .featured-events-block__event-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .more-events .featured-events-block__event-place-date {
+    font-size: 16px;
+    line-height: 22px; 
+  }
+  .more-events .event-button-with-details-1 {
+    align-self: flex-end;
+  }
+  .more-events .featured-events-block__media:last-of-type,
+  .more-events .featured-events-block__media {
+    margin-right: 15px;
+  }
+  .event-detail .top-big-block .featured-events-block__media {
+    width: 100%;
+  }
+  .event-detail .top-big-block .featured-events-block__img {
+    flex-basis: 90%;
+    max-width: calc(90vw + 8px);
+  }
+  .event-detail .featured-events-block.top-big-block {
+    margin: 0 15px 100px;
+  }
+  .event-detail .featured-events-block__event-name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .event-detail .top-big-block .featured-events-block__event-info {
+    flex-direction: column;
+  }
+  .event-detail .events-page__top-text-block {
+    margin-bottom: 20px;
+  }
+  .events-page.event-detail {
+    background-size: 100% 50%;
+  }
+  /*resources page mobile styles */
+  .resources-page .research-and-resources__box {
+    background-image: none;
+  }
+  .resources-page .research-and-resources__box_media-content_img {
+    max-width: 85vw;
+    margin-left: 15px;
+  }
+  .resources-page .research-and-resources__box_media-holder {
+    flex-basis: 100%;
+  }
+  .resources-page .research-and-resources__box_media-holder {
+    margin: 0;
+  }
+  .research-and-resources__box_media-holder.first-target.slick-slide.slick-current.slick-active > div > img {
+    margin-left: 0;
+  }
+  .resources-page .featured-events-block__event-info {
+    padding: 0 15px;
+    align-items: center;
+  }
+  .resources-page__bottom-general-wrapper {
+    margin: 0;
+  }
+  .resources-page__bottom-text-and-button-wrapper {
+    flex-direction: column;
+  }
+  .resources-page .event-button-with-details-1 {
+    align-self: flex-start;
+  }
+  .resources-page {
+    background-size: 100% 45%;
+  }
+  /*contact pages styling */
+  .main-menu-nav .connect-section-box {
+    width: 100%;
+  }
+  .main-menu-nav .event-button-with-details-1 {
+    align-self: unset;
+  }
+  .main-menu-nav .connect-section-box__button:nth-of-type(2) {
+    margin-top: 0;
+  }
+  .contact-page .connect-section-box {
+    width: 100%;
+    padding: 60px 15px 0;
+  }
+  .contact-page {
+    background-size: 100% 100%;
+  }
+  .contact-page .nav-tabs {
+    
+  }
+  .contact-page__tabs-wrapper .nav {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .contact-page .contact-page__tabs-wrapper #nav-tab .nav-link {
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .contact-page .modal-form-home, 
+  .contact-page .thank-box {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    padding: 5vh 5vw;
+  }
+  .form-elements-inputs-wrapper {
+    flex-direction: column;
+  }
+  .contact-page .modal-form-home select, .contact-page .modal-form-home input {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+  .thank-box .modal-form-home__buttons-wrapper {
+    margin-top: 60px;
+  }
+  .thank-box__heading {
+    margin-top: 60px;
+  }
+  .contact-page .thank-box {
+    margin-bottom: 60px;
+  }
+  .contact-page.site-map-page {
+    background-size: 100% 105%;
+  }
+  .not-found-page .site-map-block {
+    margin-bottom: 60px;
+  }
+  .not-found-page__text {
+    text-align: left;
+  }
+  .not-found-page__additional-heading {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: left;
+  }
+  .contact-page.not-found-page {
+    background-size: 100% 150%;
+  }
+  .not-found-page .about-wellcome-info__button {
+    margin: 25px 0 50px;
+  }
+}
+
